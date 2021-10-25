@@ -1,0 +1,16 @@
+.custom-breadcrumb {
+    margin: 15px 0;
+    .custom-breadcrumb__item {
+        font-size: 11px;
+        font-weight: 300;
+    }
+
+    .custom-breadcrumb__link {
+        color: rgb(68, 68, 68, 0.5) !important;
+        text-decoration: none;
+    }
+
+    .custom-breadcrumb__item--active {
+        color: rgba(68, 68, 68, 1);
+    }
+}

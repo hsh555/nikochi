@@ -1,0 +1,60 @@
+// Colors
+$theme-colour: #fff;
+$black: rgb(0, 0, 0);
+$white: rgb(255, 255, 255);
+$gray: rgb(245, 245, 245);
+$pink: rgb(252, 234, 222);
+$silver: #eee;
+$pink-opac: rgba(252, 234, 222, 0.5);
+$transparent: rgba(255, 255, 255, 0);
+$text-colour: rgb(88, 87, 92);
+$orange: #FF6634;
+
+$primary-colour: $theme-colour;
+$secondary-colour: $white;
+
+
+// Typography
+$font-family: "vazir", sans-serif;
+
+$font-size-base: 1rem;
+
+// Add any font sizes the site used
+
+$font-size-large: 2rem; // ~20px
+$font-size-small: 1.2rem; // ~12px
+
+$font-size-menu: $font-size-base;
+$font-size-menu-s: $font-size-base * 0.8;
+
+// Typography
+$line-height-base: 1.2em;
+
+// Layout
+$container-width: 128rem; // ~1280px
+$container-width-s: 600rem;
+$section-vertical-space: 4rem;
+$gutter: 2rem;
+$gutter-s: 1rem;
+$border-radious: 10px;
+
+$breakpoints: (
+  small: 767px,
+  medium: 992px,
+  large: 1200px,
+);
+
+// Logo (desktop) sizes
+$logo-size-vertical: 30rem;
+$logo-size-horizontal: 100rem;
+
+// Buttons
+$btn-border-radious: $border-radious;
+$btn-font-weight: 400;
+$btn-font-size: $font-size-base;
+$btn-width: 20rem;
+$btn-color: $white;
+// Forms
+
+// Footer
+$footer-font-colour: $silver;

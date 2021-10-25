@@ -1,0 +1,25 @@
+.btn {
+	outline: 0;
+	&:focus {
+		box-shadow: none;
+	}
+
+	.btn__text {
+		font-size: 16px;
+	}
+
+	.btn__icon {
+		font-size: 16px;
+	}
+}
+
+.custom-btn {
+	height: 38px;
+	padding: 7px;
+	border-radius: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 1px solid #ccc;
+	font-size: 1rem;
+}

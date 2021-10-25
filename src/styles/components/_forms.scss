@@ -1,0 +1,41 @@
+input, select, textarea, button {
+    outline: 0;
+    &:focus {
+        box-shadow: none !important;
+    }
+}
+
+// .search-form {
+//     width: 100%;
+//     max-width: 533px;
+//     height: 38px;
+//     .search-form__text-input {
+//         // width: 100%;
+//         max-width: 496px;
+//         border: 0 !important;
+//         background-color: $gray !important;
+//         border-top-left-radius: 10px;
+//         border-bottom-left-radius: 10px;
+//     }
+
+//     .search-form__icon {
+//         width: 35px;
+//         border: 0 !important;
+//         position: relative;
+//         background-color: $gray !important;
+//         border-top-right-radius: 10px;
+//         border-bottom-right-radius: 10px;
+//         font-size: 1rem;
+//         color: #818181;
+
+//         &::after {
+//             content: "";
+//             width: 1px;
+//             height: 24px;
+//             position: absolute;
+//             left: 1px;
+//             top: 7px;
+//             background-color: #ccc;
+//         }
+//     }
+// }

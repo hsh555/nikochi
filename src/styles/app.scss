@@ -1,0 +1,45 @@
+@import "~bootstrap/dist/css/bootstrap.rtl.css";
+@import "./../fonts/iran-yekan/css/fontiran.css";
+@import "./font-styles/icon-fonts.css";
+
+.custom-container {
+    width: 100%;
+    max-width: 1310px;
+    padding-right: 12px;
+    padding-left: 12px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+body {
+	font-family: iranyekan  !important;
+}
+
+.custom-col-5 {
+    width: 39.3% !important;
+}
+
+.custom-col-7 {
+    width: 59.9% !important;
+}
+
+@import "abstracts/variables";
+@import "abstracts/utils";
+
+@import "vendors/include-media";
+@import "vendors/reset";
+
+@import "layout/header";
+@import "layout/footer";
+
+
+@import "components/buttons";
+@import "components/assurance-card";
+@import "components/custom-breadcrumb";
+@import "components/custom-accordion";
+@import "components/mobile-menu";
+@import "components/forms";
+@import "components/menu";
+
+@import "pages/home.scss";
+@import "pages/archive.scss";

@@ -1,0 +1,55 @@
+.menu {
+    margin-top: 15px;
+    align-items: center;
+    display: flex;
+    background-color: $pink-opac;
+
+    .navbar {
+        height: 40px;
+        .navbar__nav-item {
+            font-size: 14px;
+        }
+
+        .navbar__nav-link {
+            color: #444 !important;
+            &.navbar__nav-link--active {
+                color: $orange !important;
+            }
+
+            &.navbar__nav-link--blue {
+                color: #25CED1 !important;
+            }
+        }
+
+        .navbar__dropdown {
+            & > .navbar__nav-link {
+                display: flex;
+                align-items: center;
+                font-weight: bold;
+
+                &::after {
+                    display: none;
+                }
+
+                .icon-Chevron_down {
+                    font-size: 1rem;
+                    font-weight: 600;
+                }
+            }
+        }
+
+        .navbar__collapse-right {
+            .navbar__navbar-nav {
+                & > .navbar__nav-item {
+                    margin-left: 7px;
+                }
+            }
+        }
+
+        .navbar__collapse-left {
+            .navbar__nav-item {
+                font-size: 13px;
+            }
+        }
+    }
+}
