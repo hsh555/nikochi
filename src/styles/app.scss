@@ -28,16 +28,13 @@ body {
 @import "abstracts/variables";
 @import "abstracts/utils";
 
-@import "vendors/include-media";
 @import "vendors/reset";
 
 @import "layout/header";
 @import "layout/footer";
 
 
-@import "components/buttons";
 @import "components/product-card";
-
 @import "components/assurance-card";
 @import "components/custom-breadcrumb";
 @import "components/custom-accordion";

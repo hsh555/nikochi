@@ -1,3 +1,37 @@
-// .custom-col {
-//     padding-left: 0 !important;
-// }
+.btn {
+	outline: 0;
+	&:focus {
+		box-shadow: none;
+	}
+
+	.btn__text {
+		font-size: 16px;
+	}
+
+	.btn__icon {
+		font-size: 16px;
+	}
+}
+
+.custom-btn {
+	height: 38px;
+	padding: 7px;
+	border-radius: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 1px solid #ccc;
+	font-size: 1rem;
+
+	&.custom-btn--primary {
+		background-color: #FF6634;
+		color: #fff;
+		border: 0;
+	}
+
+	&.custom-btn--secondary {
+		background-color: #25CED1;
+		color: #fff;
+		border: 0;
+	}
+}
