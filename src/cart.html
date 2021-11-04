@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="fa-IR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>سبد خرید</title>
+  </head>
+  <body>
+    <!-- start header -->
+    <header class="header d-none d-md-block">
+      <div class="header__top">
+        <div class="custom-container">
+          <div class="row">
+            <div class="col-12 d-flex">
+              <div class="header__logo">
+                <img src="./images/logo.png" alt="" />
+              </div>
+              <form class="header__search-form">
+                <div class="input-group mb-3">
+                  <button
+                    class="input-group-text search-form__icon"
+                    id="basic-addon1"
+                  >
+                    <span class="icon-Search"></span>
+                  </button>
+                  <input
+                    type="text"
+                    class="form-control search-form__text-input"
+                    placeholder="جستجو در نیکوچی"
+                    aria-label="Username"
+                    aria-describedby="basic-addon1"
+                  />
+                </div>
+              </form>
+              <a href="#" class="btn header__login-btn custom-btn">
+                <span class="btn__icon icon-Profile"></span>
+                <span class="btn__text">ورود به حساب کاربری</span>
+              </a>
+              <a href="#" class="btn header__cart-btn custom-btn">
+                <span class="login-btn__icon icon-Cart"></span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="menu d-none d-md-block">
+        <div class="custom-container">
+          <div class="row">
+            <div class="col-12">
+              <nav class="navbar navbar-expand-sm navbar-light">
+                <div
+                  class="
+                    navbar__collapse-right
+                    collapse
+                    navbar-collapse
+                    ml-auto
+                  "
+                  id="navbarNav"
+                >
+                  <ul class="navbar-nav navbar__navbar-nav">
+                    <li
+                      class="
+                        nav-item
+                        dropdown
+                        navbar__nav-item navbar__dropdown
+                      "
+                    >
+                      <a
+                        class="nav-link navbar__nav-link dropdown-toggle"
+                        href="#"
+                        id="navbarDropdown"
+                        role="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        محصولات
+                        <span class="icon-Chevron_down"></span>
+                      </a>
+                      <ul
+                        class="dropdown-menu"
+                        aria-labelledby="navbarDropdown"
+                      >
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li>
+                          <a class="dropdown-item" href="#">Another action</a>
+                        </li>
+                        <li><hr class="dropdown-divider" /></li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >Something else here</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                    <li
+                      class="
+                        nav-item
+                        dropdown
+                        navbar__nav-item navbar__dropdown
+                      "
+                    >
+                      <a
+                        class="nav-link navbar__nav-link dropdown-toggle"
+                        href="#"
+                        id="navbarDropdown"
+                        role="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        برندها
+                        <span class="icon-Chevron_down"></span>
+                      </a>
+                      <ul
+                        class="dropdown-menu"
+                        aria-labelledby="navbarDropdown"
+                      >
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li>
+                          <a class="dropdown-item" href="#">Another action</a>
+                        </li>
+                        <li><hr class="dropdown-divider" /></li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >Something else here</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="nav-item navbar__nav-item">
+                      <a
+                        class="
+                          nav-link
+                          navbar__nav-link navbar__nav-link--active
+                        "
+                        aria-current="page"
+                        href="#"
+                        >خرید قسطی</a
+                      >
+                    </li>
+                    <li class="nav-item navbar__nav-item">
+                      <a class="nav-link navbar__nav-link" href="#"
+                        >دانلود کاتالوگ</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <div
+                  class="
+                    navbar__collapse-left
+                    collapse
+                    navbar-collapse
+                    justify-content-end
+                    ml-auto
+                  "
+                  id="navbarNav"
+                >
+                  <ul class="navbar-nav navbar__navbar-nav">
+                    <li class="nav-item navbar__nav-item">
+                      <a
+                        class="nav-link navbar__nav-link"
+                        aria-current="page"
+                        href="#"
+                        >سوالی دارید؟</a
+                      >
+                    </li>
+                    <li class="nav-item navbar__nav-item">
+                      <a class="nav-link navbar__nav-link" href="#"
+                        >تماس با ما</a
+                      >
+                    </li>
+                    <li class="nav-item navbar__nav-item">
+                      <a class="nav-link navbar__nav-link" href="#"
+                        >درباره ما</a
+                      >
+                    </li>
+                    <li class="nav-item navbar__nav-item">
+                      <a
+                        class="nav-link navbar__nav-link navbar__nav-link--blue"
+                        href="#"
+                        >وبلاگ نیکوچی</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- end header -->
+
+    <!-- start cart section -->
+    <section class="cart">
+      <div class="custom-container">
+        <div class="row">
+          <div class="col-12">
+            <div class="cart__inner">
+              <div class="cart__tab-wrapper">
+                <ul
+                  class="nav nav-pills mb-3 cart__nav"
+                  id="cartTab"
+                  role="tablist"
+                >
+                  <li class="nav-item cart__nav-item" role="presentation">
+                    <button
+                      class="nav-link cart__nav-link active"
+                      id="cart-shopping-basket-tab"
+                      data-bs-toggle="pill"
+                      data-bs-target="#cart-shopping-basket"
+                      type="button"
+                      role="tab"
+                      aria-controls="pills-home"
+                      aria-selected="true"
+                    >
+                      <span class="cart__nav-link__icon icon-Cart"></span>
+                      سبد خرید
+                    </button>
+                  </li>
+                  <li class="nav-item cart__nav-item" role="presentation">
+                    <button
+                      class="nav-link cart__nav-link"
+                      id="cart-shopping-list-tab"
+                      data-bs-toggle="pill"
+                      data-bs-target="#cart-shopping-list"
+                      type="button"
+                      role="tab"
+                      aria-controls="pills-profile"
+                      aria-selected="false"
+                    >
+                      <span class="cart__nav-link__icon icon-List"></span>
+                      لیست خرید
+                    </button>
+                  </li>
+                </ul>
+                <div class="tab-content cart__tab-content" id="cart-tabContent">
+                  <div class="cart__info d-flex d-md-none">
+                    <span class="cart__info__text">1 کالا در سبد خرید</span>
+                    <span class="cart__info__more icon-More_vertical"></span>
+                  </div>
+                  <div
+                    class="tab-pane cart__tab-pane fade show active"
+                    id="cart-shopping-basket"
+                    role="tabpanel"
+                    aria-labelledby="cart-shopping-basket-tab"
+                  >
+                    <div class="cart__item">
+                      <div class="cart__item__main">
+                        <div class="cart__item__header">
+                          <img
+                            src="./images/tv-1.png"
+                            class="cart__item__img"
+                            alt=""
+                          />
+                        </div>
+                        <div class="cart__item__content">
+                          <h3 class="cart__item__title">
+                            تلویزیون ال ای دی هوشمند جی پلاس 50 اینچ مدل
+                            GTV-50LU722S
+                          </h3>
+                          <div class="cart__item__body">
+                            <div class="cart__item__properties">
+                              <div class="cart__item__properties__color">
+                                <span
+                                  class="bullet"
+                                  style="background-color: black"
+                                ></span>
+                                مشکی
+                              </div>
+                              <div class="cart__item__properties__text-item">
+                                <span class="icon-Bookmark"></span>
+                                گارانتی 24 ماهه گلدیران
+                              </div>
+                              <div class="cart__item__properties__text-item">
+                                <span class="icon-delivery-truck-1"></span>
+                                ارسال توسط نیکوچی - از 1 روز کاری دیگر
+                              </div>
+                            </div>
+                            <div class="cart__item__actions">
+                              <button
+                                class="btn cart__item__add-to-shopping-list-btn"
+                              >
+                                <span class="icon-Selection_box_off-1"></span>
+                                افزودن به سبد خرید
+                              </button>
+                              <button class="btn cart__item__delete-btn">
+                                <span class="icon-Trash"></span>
+                                حذف
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="cart__item__footer">
+                        <div class="cart__item__counter">
+                          <span
+                            class="cart__item__counter__increaser icon-Plus"
+                          ></span>
+                          <span class="cart__item__counter__count">1</span>
+                          <span
+                            class="cart__item__counter__decreaser icon-Minus"
+                          ></span>
+                        </div>
+                        <div class="cart__item__price">
+                          13.190.000
+
+                          <span class="cart__item__price__monetary-unit">
+                            تومان
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="cart__footer">
+                      مبلغ قابل پرداخت:
+                      <span class="cart__amount">
+                        13.190.000
+
+                        <span class="cart__amount__monetary-unit">تومان</span>
+                      </span>
+                    </div>
+                  </div>
+                  <div
+                    class="tab-pane cart__tab-pane fade"
+                    id="cart-shopping-list"
+                    role="tabpanel"
+                    aria-labelledby="cart-shopping-list-tab"
+                  >
+                    <div class="cart__item">
+                      <div class="cart__item__main">
+                        <div class="cart__item__header">
+                          <img
+                            src="./images/tv-1.png"
+                            class="cart__item__img"
+                            alt=""
+                          />
+                        </div>
+                        <div class="cart__item__content">
+                          <h3 class="cart__item__title">
+                            تلویزیون ال ای دی هوشمند جی پلاس 50 اینچ مدل
+                            GTV-50LU722S
+                          </h3>
+                          <div class="cart__item__body">
+                            <div class="cart__item__properties">
+                              <div class="cart__item__properties__color">
+                                <span
+                                  class="bullet"
+                                  style="background-color: black"
+                                ></span>
+                                مشکی
+                              </div>
+                              <div class="cart__item__properties__text-item">
+                                <span class="icon-Bookmark"></span>
+                                گارانتی 24 ماهه گلدیران
+                              </div>
+                              <div class="cart__item__properties__text-item">
+                                <span class="icon-delivery-truck-1"></span>
+                                ارسال توسط نیکوچی - از 1 روز کاری دیگر
+                              </div>
+                            </div>
+                            <div class="cart__item__actions">
+                              <button
+                                class="btn cart__item__add-to-shopping-list-btn"
+                              >
+                                <span class="icon-Selection_box_off-1"></span>
+                                افزودن به سبد خرید
+                              </button>
+                              <button class="btn cart__item__delete-btn">
+                                <span class="icon-Trash"></span>
+                                حذف
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="cart__item__footer">
+                        <div class="cart__item__counter">
+                          <span
+                            class="cart__item__counter__increaser icon-Plus"
+                          ></span>
+                          <span class="cart__item__counter__count">1</span>
+                          <span
+                            class="cart__item__counter__decreaser icon-Minus"
+                          ></span>
+                        </div>
+                        <div class="cart__item__price">
+                          13.190.000
+
+                          <span class="cart__item__price__monetary-unit">
+                            تومان
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="cart__item">
+                      <div class="cart__item__main">
+                        <div class="cart__item__header">
+                          <img
+                            src="./images/tv-1.png"
+                            class="cart__item__img"
+                            alt=""
+                          />
+                        </div>
+                        <div class="cart__item__content">
+                          <h3 class="cart__item__title">
+                            تلویزیون ال ای دی هوشمند جی پلاس 50 اینچ مدل
+                            GTV-50LU722S
+                          </h3>
+                          <div class="cart__item__body">
+                            <div class="cart__item__properties">
+                              <div class="cart__item__properties__color">
+                                <span
+                                  class="bullet"
+                                  style="background-color: black"
+                                ></span>
+                                مشکی
+                              </div>
+                              <div class="cart__item__properties__text-item">
+                                <span class="icon-Bookmark"></span>
+                                گارانتی 24 ماهه گلدیران
+                              </div>
+                              <div class="cart__item__properties__text-item">
+                                <span class="icon-delivery-truck-1"></span>
+                                ارسال توسط نیکوچی - از 1 روز کاری دیگر
+                              </div>
+                            </div>
+                            <div class="cart__item__actions">
+                              <button
+                                class="btn cart__item__add-to-shopping-list-btn"
+                              >
+                                <span class="icon-Selection_box_off-1"></span>
+                                افزودن به سبد خرید
+                              </button>
+                              <button class="btn cart__item__delete-btn">
+                                <span class="icon-Trash"></span>
+                                حذف
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="cart__item__footer">
+                        <div class="cart__item__counter">
+                          <span
+                            class="cart__item__counter__increaser icon-Plus"
+                          ></span>
+                          <span class="cart__item__counter__count">1</span>
+                          <span
+                            class="cart__item__counter__decreaser icon-Minus"
+                          ></span>
+                        </div>
+                        <div class="cart__item__price">
+                          13.190.000
+
+                          <span class="cart__item__price__monetary-unit">
+                            تومان
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="cart__footer">
+                      مبلغ قابل پرداخت:
+                      <span class="cart__amount">
+                        13.190.000
+
+                        <span class="cart__amount__monetary-unit">تومان</span>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="price-info">
+                <div class="price-info__inner">
+                  <div class="price__info__item">
+                    <span class="price__info__item__key"
+                      >قیمت کالاها (1) :</span
+                    >
+                    <div class="price__info__item__value">
+                      13.190.000
+                      <span class="price__info__item__monetary-unit">
+                        تومان
+                      </span>
+                    </div>
+                  </div>
+                  <div class="price__info__item price__info__item--off">
+                    <span class="price__info__item__key">تخفیف :</span>
+                    <div class="price__info__item__value">
+                      (10%)1.800.000
+                      <span class="price__info__item__monetary-unit">
+                        تومان
+                      </span>
+                    </div>
+                  </div>
+                  <div class="price__info__item price__info__item--final">
+                    <span class="price__info__item__key"
+                      >قیمت نهایی فاکتور:</span
+                    >
+                    <div class="price__info__item__value">
+                      13.190.000
+                      <span class="price__info__item__monetary-unit">
+                        تومان
+                      </span>
+                    </div>
+                  </div>
+                  <p class="price__info__text">
+                    هزینه‌ی ارسال در ادامه بر اساس آدرس، زمان و نحوه‌ی ارسال
+                    انتخابی شما‌ محاسبه و به این مبلغ اضافه خواهد شد.
+                  </p>
+                  <div class="price-info__btn-wrapper">
+                    <button
+                      class="btn custom-btn custom-btn--primary price-info__btn"
+                    >
+                      ادامه فرایند
+                    </button>
+                  </div>
+                </div>
+                <div class="price__info__sub">
+                  <span class="icon-delivery-truck-1"></span>
+                  با خرید این کالا 100 امتیاز دریافت می‌کنید.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end cart-main section -->
+
+    <!-- start footer -->
+    <footer class="footer">
+      <div class="footer__top">
+        <div class="custom-container">
+          <div class="row">
+            <div class="col-12">
+              <div class="custom-collapse">
+                <h4 class="custom-collapse__title">
+                  فروشگاه اینترنتی نیکوچی | نقد ، بررسی و خرید آنلاین لوازم
+                  خانگی
+                </h4>
+                <div
+                  class="
+                    collapse
+                    custom-collapse__content custom-collapse__collapse
+                  "
+                  id="footerCollapse"
+                >
+                  <div class="card card-body custom-collapse__card-body">
+                    تیم بوش پلاس دارای بیش از دو دهه فعالیت موثر در بازار لوازم
+                    خانگی ایران به صورت سنتی است و بنا به درخواست مشتریان و رفاه
+                    حال آن ها ، همچنین گسترش روز افزون اینترنت در کشور ، در سال
+                    96 اقدام به راه اندازی سایت بوش پلاس نموده است. از مهم ترین
+                    اهداف مجموعه بوش پلاس عرضه محصولات با کمترین قیمت ، گارانتی
+                    های اصل ، ارسال سریع و رایگان و پیگیری سریع سفارشات میباشد .
+                    در حال حاضر این فروشگاه دارای تیم های تخصصی در حوزه های فروش
+                    ، مارکتینگ ، تامین کالا ، برنامه نویسی ، محتوا نویسی و ارسال
+                    بوده که در ساعات کاری پاسخگوی مشتریان عزیز میباشند. فروشگاه
+                    اینترنتی بوش پلاس دارای دو شعبه در سه راه امین حضور بوده که
+                    مراجعین محترم علاوه بر خرید اینترنتی ، میتوانند با مراجعه
+                    حضوری به شعبات ، محصول مورد نظر را مشاهده و خریداری نمایند.
+                  </div>
+                </div>
+                <p class="custom-collapse__link-wrapper d-block d-lg-none">
+                  <a
+                    class="custom-collapse__toggler"
+                    data-bs-toggle="collapse"
+                    href="#footerCollapse"
+                    role="button"
+                    aria-expanded="false"
+                    aria-controls="footerCollapse"
+                  >
+                    <span class="custom-collapse__close">مشاهده بیشتر</span>
+                    <span class="custom-collapse__open">بستن</span>
+                  </a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <div class="custom-container">
+          <div class="row">
+            <div class="col-4 col-md-2">
+              <nav class="nav flex-column footer__nav">
+                <h5 class="footer__nav-title">نیکوچی</h5>
+                <a
+                  class="nav-link footer__nav-link"
+                  aria-current="page"
+                  href="#"
+                  >درباره نیکوچی</a
+                >
+                <a class="nav-link footer__nav-link" href="#">تماس با نیکوچی</a>
+                <a class="nav-link footer__nav-link" href="#">راهنمای جامع</a>
+                <a class="nav-link footer__nav-link" href="#">فرصت های شغلی</a>
+                <a class="nav-link footer__nav-link" href="#">فروشنده شوید!</a>
+                <a class="nav-link footer__nav-link" href="#"
+                  >ضمانت اصالت کالا</a
+                >
+              </nav>
+            </div>
+            <div class="col-4 col-md-2">
+              <nav class="nav flex-column footer__nav">
+                <h5 class="footer__nav-title">راهنمای نیکوچی</h5>
+                <a
+                  class="nav-link footer__nav-link"
+                  aria-current="page"
+                  href="#"
+                  >روش های پرداخت</a
+                >
+                <a class="nav-link footer__nav-link" href="#"
+                  >روش های ارسال کالا</a
+                >
+                <a class="nav-link footer__nav-link" href="#"
+                  >لغو و بازگشت کالا</a
+                >
+                <a class="nav-link footer__nav-link" href="#">شرایط و قوانین</a>
+                <a class="nav-link footer__nav-link" href="#">سوالات متداول</a>
+                <a class="nav-link footer__nav-link" href="#">حریم خصوصی</a>
+              </nav>
+            </div>
+            <div class="col-4 d-block d-md-none">
+              <nav class="nav flex-column footer__nav footer__social-media">
+                <h5 class="footer__nav-title">با ما همراه باشید</h5>
+
+                <a class="nav-link footer__nav-link" href="#"
+                  ><span class="icon-telegram28460b7-1"></span
+                ></a>
+                <a class="nav-link footer__nav-link" href="#"
+                  ><span class="icon-telegram28460b7-1"></span
+                ></a>
+                <a class="nav-link footer__nav-link" href="#"
+                  ><span class="icon-telegram28460b7-1"></span
+                ></a>
+                <a class="nav-link footer__nav-link" href="#"
+                  ><span class="icon-telegram28460b7-1"></span
+                ></a>
+              </nav>
+            </div>
+            <div class="col-12 col-md-8 px-0">
+              <div
+                class="footer__card-wrapper d-flex flex-row flex-xl-row-reverse"
+              >
+                <div class="footer__card-inner">
+                  <div class="card assurance-card">
+                    <div
+                      class="assurance-card__img assurance-card__img--one"
+                    ></div>
+                    <div class="card-body assurance-card__body">
+                      <h5 class="card-title assurance-card__title">
+                        تضمین اصالت کالا
+                      </h5>
+                      <p class="card-text assurance-card__text">
+                        تمامی کالاها با گارانتی معتبر
+                      </p>
+                    </div>
+                  </div>
+                  <div class="card assurance-card">
+                    <div
+                      class="assurance-card__img assurance-card__img--two"
+                    ></div>
+                    <div class="card-body assurance-card__body">
+                      <h5 class="card-title assurance-card__title">
+                        تضمین اصالت کالا
+                      </h5>
+                      <p class="card-text assurance-card__text">
+                        تمامی کالاها با گارانتی معتبر
+                      </p>
+                    </div>
+                  </div>
+                  <div class="card assurance-card">
+                    <div
+                      class="assurance-card__img assurance-card__img--three"
+                    ></div>
+                    <div class="card-body assurance-card__body">
+                      <h5 class="card-title assurance-card__title">
+                        تضمین اصالت کالا
+                      </h5>
+                      <p class="card-text assurance-card__text">
+                        تمامی کالاها با گارانتی معتبر
+                      </p>
+                    </div>
+                  </div>
+                  <div class="card assurance-card">
+                    <div
+                      class="assurance-card__img assurance-card__img--four"
+                    ></div>
+                    <div class="card-body assurance-card__body">
+                      <h5 class="card-title assurance-card__title">
+                        تضمین اصالت کالا
+                      </h5>
+                      <p class="card-text assurance-card__text">
+                        تمامی کالاها با گارانتی معتبر
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row gx-3 mb-3">
+            <div class="col-12 d-none d-md-block">
+              <div class="footer__contacts">
+                <div class="footer__contact-item">
+                  <span class="footer__contact-title">شماره تماس : </span>
+                  <span class="footer__contact-value">0912123658</span>
+                  <span class="footer__contact-value">0912123658</span>
+                </div>
+                <div class="footer__contact-item">
+                  <span class="footer__contact-title">آدرس ایمیل : </span>
+                  <span class="footer__contact-value">info@nikoochi.ir</span>
+                </div>
+                <div class="footer__contact-item">
+                  <span class="footer__contact-title">ساعات پاسخگویی : </span>
+                  <span class="footer__contact-value"
+                    >شنبه تا چهارشنبه ۸:۳۰ الی ۲۱ - پنجشنبه ۹ الی ۲۰</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-6 d-block d-md-none">
+              <div class="footer__contacts footer__mobile-contacts">
+                <div class="footer__contact-item">
+                  <span class="icon-Phone footer__contact-icon"></span>
+                  <div class="footer__contact-item-wrapper">
+                    <span class="footer__contact-value">0912123658</span>
+                    <span class="footer__contact-value">0912123658</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 d-block d-md-none">
+              <div class="footer__contacts footer__mobile-contacts">
+                <div class="footer__contact-item">
+                  <span
+                    class="icon-Envelope_closed footer__contact-icon"
+                  ></span>
+                  <div class="footer__contact-item-wrapper">
+                    <span class="footer__contact-value">info@nikoochi.ir</span>
+                    <span class="footer__contact-value">0912123658</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 d-block d-md-none">
+              <div class="footer__mobile-contacts mt-3">
+                <div class="footer__contact-item">
+                  <span class="footer__contact-title">ساعات پاسخگویی : </span>
+                  <span class="footer__contact-value px-0"
+                    >شنبه تا چهارشنبه ۸:۳۰ الی ۲۱ - پنجشنبه ۹ الی ۲۰</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row mt-3">
+            <div class="col-12 col-md-6">
+              <div
+                class="
+                  footer__download-link-wrapper
+                  justify-content-center justify-content-md-start
+                "
+              >
+                <a
+                  href=""
+                  class="footer__download-link footer__download-link--one"
+                >
+                </a>
+                <a
+                  href=""
+                  class="
+                    footer__download-link footer__download-link--two
+                    mx-sm-3
+                  "
+                >
+                </a>
+                <a
+                  href=""
+                  class="footer__download-link footer__download-link--three"
+                >
+                </a>
+              </div>
+            </div>
+            <div class="col-12 col-md-6">
+              <div
+                class="
+                  footer__img-link-wrapper
+                  justify-content-center justify-content-md-end
+                "
+              >
+                <a
+                  href=""
+                  class="footer__license-link footer__license-link--one"
+                >
+                </a>
+                <a
+                  href=""
+                  class="footer__license-link footer__license-link--two"
+                >
+                </a>
+                <a
+                  href=""
+                  class="footer__license-link footer__license-link--three"
+                >
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- end footer -->
+
+    <!-- start mobile-menu -->
+    <div class="mobile-menu d-block d-md-none">
+      <nav class="nav mobile-menu__nav">
+        <a
+          class="nav-link mobile-menu__nav-link mobile-menu__nav-link--active"
+          aria-current="page"
+          href="#"
+        >
+          <span class="icon-Home mobile-menu__nav-icon"></span>
+          <span class="mobile-menu__nav-text">خانه</span>
+        </a>
+        <a class="nav-link mobile-menu__nav-link" href="#">
+          <span class="icon-Resize_out-1 mobile-menu__nav-icon"></span>
+          <span class="mobile-menu__nav-text">دسته بندی</span>
+        </a>
+        <a class="nav-link mobile-menu__nav-link" href="#">
+          <span class="icon-Bag mobile-menu__nav-icon"></span>
+          <span class="mobile-menu__nav-text">سبد خرید</span>
+        </a>
+        <a class="nav-link mobile-menu__nav-link" href="#">
+          <span class="icon-Profile mobile-menu__nav-icon"></span>
+          <span class="mobile-menu__nav-text">پروفایل</span>
+        </a>
+      </nav>
+    </div>
+    <!-- end mobile-menu -->
+
+    <!-- start mobile-menu -->
+    <div class="mobile-fixed-board">
+      <button
+        class="btn custom-btn custom-btn--primary mobile-fixed-board__btn"
+      >
+        ادامه فرایند خرید
+      </button>
+      <div class="mobile-fixed-board__price mobile-fixed-board__price--off">
+        <div class="mobile-fixed-board__price__original-price">
+          <span class="mobile-fixed-board__price__money-figure"
+            >15.380.000</span
+          >
+          <span class="mobile-fixed-board__price__badge badge rounded-pill"
+            >%10</span
+          >
+        </div>
+        <div class="mobile-fixed-board__price__off-price">
+          <span class="mobile-fixed-board__price__money-figure"
+            >13.190.000</span
+          >
+          <span class="mobile-fixed-board__price__monetary-unit">تومان</span>
+        </div>
+      </div>
+    </div>
+    <!-- end mobile-menu -->
+  </body>
+</html>

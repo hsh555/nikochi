@@ -1,0 +1,128 @@
+.product-card {
+    width: 235px;
+    height: 360px;
+    padding: 10px 15px 15px !important;
+    background-color: #fff;
+    border-radius: $border-radious;
+    border: 0 !important;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.15);
+    align-items: center;
+    .product-card__img {
+        max-width: 185px;
+        max-height: 185px;
+    }
+    .product-card__body {
+        padding: 0;
+    }
+    .product-card__title {
+        font-size: 13px;
+        padding: 10px 0;
+        color: #444;
+        line-height: 24px;
+        border-bottom: 1px solid #f5f5f5;
+    }
+
+    .product-card__title--off {
+        border-bottom: 1px solid #ea526f;
+    }
+
+    .product-card__info {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 0;
+    }
+
+    .product-card__dots {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .product-card__dot {
+        width: 10px;
+        height: 10px;
+        border-radius: 100%;
+        margin-bottom: 3px;
+        border: 1px solid #f5f5f5;
+    }
+
+    .product-card__dot-dark {
+        background-color: #818181;
+    }
+
+    .product-card__dot-white {
+        background-color: #fff;
+    }
+
+    .product-card__dot-gray {
+        background-color: #ccc;
+    }
+
+    .product-card__price {
+        text-align: center;
+        padding: 0 15px 0 5px;
+    }
+
+    .product-card__original-price {
+        margin-top: 5px;
+        display: flex;
+        align-items: center;
+        color: #323232;
+
+        .product-card__money-figure {
+            font-size: 18px;
+        }
+    }
+
+    .product-card__monetary-unit {
+        font-size: 13px;
+        font-weight: 100;
+        margin-right: 7px;
+    }
+
+    .product-card__price--off {
+        .product-card__original-price {
+            display: flex;
+            align-items: baseline;
+            .product-card__money-figure {
+                font-size: 17px;
+                font-weight: 100;
+                color: #818181;
+                text-decoration: line-through;
+            }
+        }
+        .product-card__off-price {
+            margin-top: 5px;
+            display: flex;
+            align-items: center;
+            color: #323232;
+
+            .product-card__money-figure {
+                font-size: 22px;
+            }
+        }
+
+        .product-card__monetary-unit {
+            font-size: 13px;
+            font-weight: 100;
+            margin-right: 7px;
+        }
+    }
+
+    .product-card__badge {
+        width: 42px;
+        height: 22px;
+        margin-right: 7px;
+        padding: 0;
+        text-align: center;
+        line-height: 26px;
+        font-size: 16px;
+        font-weight: 200;
+        background-color: #ea526f;
+        color: #fff;
+    }
+
+    .product-card__icon {
+        font-size: 26px;
+        color: #aaa;
+    }
+}

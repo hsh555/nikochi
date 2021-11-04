@@ -22,4 +22,16 @@
 	justify-content: center;
 	border: 1px solid #ccc;
 	font-size: 1rem;
+
+	&.custom-btn--primary {
+		background-color: #FF6634;
+		color: #fff;
+		border: 0;
+	}
+
+	&.custom-btn--secondary {
+		background-color: #25CED1;
+		color: #fff;
+		border: 0;
+	}
 }

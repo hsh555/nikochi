@@ -1,0 +1,27 @@
+.custom-switch {
+    margin-bottom: 20px;
+    .custom-switch__form-switch {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+        padding: 0;
+        align-items: center;
+    }
+
+    .custom-switch__form-check-input {
+        width: 36px;
+        height: 18px;
+        margin: 0;
+        background-color: #ccc;
+        border: 0 !important;
+        background-image: url("./../images/switch.svg");
+        &:checked {
+            background-color: #25ced1;
+        }
+    }
+
+    .custom-switch__form-check-label {
+        font-size: 14px;
+        color: #444;
+    }
+}

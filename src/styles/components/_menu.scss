@@ -6,6 +6,10 @@
 
     .navbar {
         height: 40px;
+
+        .navbar__navbar-nav {
+            position: unset !important;
+        }
         .navbar__nav-item {
             font-size: 14px;
         }
@@ -22,6 +26,7 @@
         }
 
         .navbar__dropdown {
+            position: unset !important;
             & > .navbar__nav-link {
                 display: flex;
                 align-items: center;
@@ -36,6 +41,25 @@
                     font-weight: 600;
                 }
             }
+        }
+
+        .navbar__dropdown-item {
+            padding: 7.5px 0;
+            font-size: 13px;
+            color: #444;
+
+
+            &:hover {
+                background-color: transparent;
+            }
+        }
+
+        .navbar__dropdown-menu {
+            width: 100%;
+            top: 95%;
+            padding: 20px 25px;
+            border: 0 !important;
+            box-shadow: 0 0 8px 0 rgba(0, 0, 0, .1);
         }
 
         .navbar__collapse-right {

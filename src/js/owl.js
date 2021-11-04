@@ -2,7 +2,6 @@ import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel";
 import "../styles/lib/owl.scss";
 
-// replace custom-navs
 
 $(".category__carousel").owlCarousel({
   loop: false,
@@ -27,7 +26,6 @@ $(".category__carousel").owlCarousel({
 $(".special-offer__carousel").owlCarousel({
   loop: false,
   autoWidth: true,
-  nav: true,
   slideBy: 3,
   margin: 15,
   rtl: true,
@@ -40,7 +38,7 @@ $(".special-offer__carousel").owlCarousel({
     0: {
       nav: false,
     },
-    425: {
+    600: {
       nav: true,
     },
   },

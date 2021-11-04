@@ -1,0 +1,133 @@
+.profile-edit {
+    margin-top: 0;
+    margin-bottom: 90px;
+
+    .profile-edit__header {
+        font-size: 16px;
+        font-weight: bold;
+        color: #323232;
+        padding: 25px;
+        border-bottom: 1px solid #eee;
+        text-align: center;
+    }
+
+    .profile-edit__account {
+        display: flex;
+        flex-direction: column;
+        .profile-edit__account__item {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px 15px;
+            border-radius: $border-radious;
+            border-bottom: 1px solid rgba(245, 245, 245, .5);
+
+            &:last-of-type {
+                border-bottom: 0 !important;
+                margin-bottom: 25px;
+            }
+
+            .profile-edit__account__item__label {
+                display: block;
+                font-size: 12px;
+                color: #818181;
+                margin-bottom: 25px;
+                position: relative;
+
+                &:after {
+                    content: "";
+                    position: absolute;
+                    width: 1px;
+                    height: 27px;
+                    background-color: #ccc;
+                    right: 7px;
+                    top: 16px;
+                }
+            }
+
+            .profile-edit__account__item__value {
+                font-size: 12px;
+                color: #444;
+                margin-right: 15px;
+                position: relative;
+                &::before {
+                    content: "";
+                    position: absolute;
+                    width: 7px;
+                    height: 7px;
+                    border-radius: 100%;
+                    background-color: #ccc;
+                    right: -11px;
+                    top: 4px;
+                }
+            }
+
+            .profile-edit__account__item__icon {
+                font-size: 24px;
+                color: #818181;
+            }
+        }
+
+        .profile-edit__account__form-group {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            height: 80px;
+            background-color: #fff;
+            box-shadow: 0 0 20px 8px rgba(0, 0, 0, .05);
+            border-radius: $border-radious;
+            padding-right: 10px;
+            padding-left: 20px;
+            margin-bottom: 20px;
+
+            .profile-edit__account__form-group__inner {
+                width: 100%;
+                margin-left: 50px;
+            }
+
+            .profile-edit__account__form-label {
+                font-size: 14px;
+                color: #818181;
+            } 
+
+            .profile-edit__account__form-control {
+                height: 25px;
+                border: 0;
+                font-size: 12px;
+                color: #444;
+                padding-right: 0;
+                border-color: #eee;
+                transition: .2s ease;
+                
+                &::placeholder {
+                    font-size: 12px;
+                    color: #444;
+                }
+
+                &:focus {
+                    border-bottom: 1px solid #eee;
+                }
+            }
+
+            .profile-edit__account__form-group__img {
+                width: 60px;
+                min-width: 60px;
+                height: 60px;
+                background-image: url(../images/profile-edit.png);
+
+
+                &.profile-edit__account__form-group__img--bank-account {
+                    background-position-x: 0;
+                    background-position-y: 0;
+                }
+
+                &.profile-edit__account__form-group__img--email {
+                    background-position-x: 0;
+                    background-position-y: -94px;
+                }
+            }
+        }
+    }
+}

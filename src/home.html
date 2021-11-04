@@ -78,17 +78,29 @@
                         <span class="icon-Chevron_down"></span>
                       </a>
                       <ul
-                        class="dropdown-menu"
+                        class="dropdown-menu navbar__dropdown-menu"
                         aria-labelledby="navbarDropdown"
                       >
-                        <li><a class="dropdown-item" href="#">Action</a></li>
                         <li>
-                          <a class="dropdown-item" href="#">Another action</a>
+                          <a
+                            class="dropdown-item navbar__dropdown-item"
+                            href="#"
+                            >ماشین لباسشویی</a
+                          >
                         </li>
-                        <li><hr class="dropdown-divider" /></li>
                         <li>
-                          <a class="dropdown-item" href="#"
-                            >Something else here</a
+                          <a
+                            class="dropdown-item navbar__dropdown-item"
+                            href="#"
+                            >تلویزیون</a
+                          >
+                        </li>
+
+                        <li>
+                          <a
+                            class="dropdown-item navbar__dropdown-item"
+                            href="#"
+                            >یخچال</a
                           >
                         </li>
                       </ul>
@@ -112,7 +124,7 @@
                         <span class="icon-Chevron_down"></span>
                       </a>
                       <ul
-                        class="dropdown-menu"
+                        class="dropdown-menu navbar__dropdown-menu"
                         aria-labelledby="navbarDropdown"
                       >
                         <li><a class="dropdown-item" href="#">Action</a></li>
@@ -420,7 +432,6 @@
               ></a>
             </div>
             <div class="special-offer__body">
-              <!-- <div class="owl-carousel__opac-left"></div> -->
               <div class="owl-carousel owl-theme special-offer__carousel">
                 <div class="card product-card item">
                   <img
@@ -850,7 +861,7 @@
     <!-- start most-visited section -->
     <section class="intro-section">
       <div class="custom-container">
-        <div class="row">
+        <div class="row intro-section__row">
           <div class="col-12">
             <h2 class="intro-section__title">پر بازدید ترین ها</h2>
           </div>
@@ -1233,7 +1244,7 @@
     <!-- start most-sales section -->
     <section class="intro-section">
       <div class="custom-container">
-        <div class="row">
+        <div class="row intro-section__row">
           <div class="col-12">
             <h2 class="intro-section__title">پر فروش ترین ها</h2>
           </div>
@@ -1608,7 +1619,7 @@
     <!-- start tv section -->
     <section class="intro-section">
       <div class="custom-container">
-        <div class="row">
+        <div class="row intro-section__row">
           <div class="col-12">
             <h2 class="intro-section__title">تلویزیون</h2>
           </div>
@@ -1964,7 +1975,7 @@
     <!-- start washing-machime section -->
     <section class="intro-section">
       <div class="custom-container">
-        <div class="row">
+        <div class="row intro-section__row">
           <div class="col-12">
             <h2 class="intro-section__title">ماشین لباسشویی</h2>
           </div>
@@ -2349,7 +2360,7 @@
     <!-- start new-products section -->
     <section class="intro-section">
       <div class="custom-container">
-        <div class="row">
+        <div class="row intro-section__row">
           <div class="col-12">
             <h2 class="intro-section__title">محصولات جدید</h2>
           </div>
@@ -2708,38 +2719,47 @@
         <div class="custom-container">
           <div class="row">
             <div class="col-12">
-              <h4 class="footer__title">
-                فروشگاه اینترنتی نیکوچی | نقد ، بررسی و خرید آنلاین لوازم خانگی
-              </h4>
-              <div class="collapse footer__collapse" id="collapseExample">
-                <div class="card card-body footer__description">
-                  تیم بوش پلاس دارای بیش از دو دهه فعالیت موثر در بازار لوازم
-                  خانگی ایران به صورت سنتی است و بنا به درخواست مشتریان و رفاه
-                  حال آن ها ، همچنین گسترش روز افزون اینترنت در کشور ، در سال 96
-                  اقدام به راه اندازی سایت بوش پلاس نموده است. از مهم ترین اهداف
-                  مجموعه بوش پلاس عرضه محصولات با کمترین قیمت ، گارانتی های اصل
-                  ، ارسال سریع و رایگان و پیگیری سریع سفارشات میباشد . در حال
-                  حاضر این فروشگاه دارای تیم های تخصصی در حوزه های فروش ،
-                  مارکتینگ ، تامین کالا ، برنامه نویسی ، محتوا نویسی و ارسال
-                  بوده که در ساعات کاری پاسخگوی مشتریان عزیز میباشند. فروشگاه
-                  اینترنتی بوش پلاس دارای دو شعبه در سه راه امین حضور بوده که
-                  مراجعین محترم علاوه بر خرید اینترنتی ، میتوانند با مراجعه
-                  حضوری به شعبات ، محصول مورد نظر را مشاهده و خریداری نمایند.
-                </div>
-              </div>
-              <p class="custom-collapse__link-wrapper d-block d-lg-none">
-                <a
-                  class="footer__collapse-toggler"
-                  data-bs-toggle="collapse"
-                  href="#collapseExample"
-                  role="button"
-                  aria-expanded="false"
-                  aria-controls="collapseExample"
+              <div class="custom-collapse">
+                <h4 class="custom-collapse__title">
+                  فروشگاه اینترنتی نیکوچی | نقد ، بررسی و خرید آنلاین لوازم
+                  خانگی
+                </h4>
+                <div
+                  class="
+                    collapse
+                    custom-collapse__content custom-collapse__collapse
+                  "
+                  id="footerCollapse"
                 >
-                  <span class="custom-collapse__close">مشاهده بیشتر</span>
-                  <span class="custom-collapse__open">بستن</span>
-                </a>
-              </p>
+                  <div class="card card-body custom-collapse__card-body">
+                    تیم بوش پلاس دارای بیش از دو دهه فعالیت موثر در بازار لوازم
+                    خانگی ایران به صورت سنتی است و بنا به درخواست مشتریان و رفاه
+                    حال آن ها ، همچنین گسترش روز افزون اینترنت در کشور ، در سال
+                    96 اقدام به راه اندازی سایت بوش پلاس نموده است. از مهم ترین
+                    اهداف مجموعه بوش پلاس عرضه محصولات با کمترین قیمت ، گارانتی
+                    های اصل ، ارسال سریع و رایگان و پیگیری سریع سفارشات میباشد .
+                    در حال حاضر این فروشگاه دارای تیم های تخصصی در حوزه های فروش
+                    ، مارکتینگ ، تامین کالا ، برنامه نویسی ، محتوا نویسی و ارسال
+                    بوده که در ساعات کاری پاسخگوی مشتریان عزیز میباشند. فروشگاه
+                    اینترنتی بوش پلاس دارای دو شعبه در سه راه امین حضور بوده که
+                    مراجعین محترم علاوه بر خرید اینترنتی ، میتوانند با مراجعه
+                    حضوری به شعبات ، محصول مورد نظر را مشاهده و خریداری نمایند.
+                  </div>
+                </div>
+                <p class="custom-collapse__link-wrapper d-block d-lg-none">
+                  <a
+                    class="custom-collapse__toggler"
+                    data-bs-toggle="collapse"
+                    href="#footerCollapse"
+                    role="button"
+                    aria-expanded="false"
+                    aria-controls="footerCollapse"
+                  >
+                    <span class="custom-collapse__close">مشاهده بیشتر</span>
+                    <span class="custom-collapse__open">بستن</span>
+                  </a>
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -2774,13 +2794,15 @@
                   href="#"
                   >روش های پرداخت</a
                 >
-                <a class="nav-link footer__nav-link" href="#">روش های ارسال کالا</a>
-                <a class="nav-link footer__nav-link" href="#">لغو و بازگشت کالا</a>
+                <a class="nav-link footer__nav-link" href="#"
+                  >روش های ارسال کالا</a
+                >
+                <a class="nav-link footer__nav-link" href="#"
+                  >لغو و بازگشت کالا</a
+                >
                 <a class="nav-link footer__nav-link" href="#">شرایط و قوانین</a>
                 <a class="nav-link footer__nav-link" href="#">سوالات متداول</a>
-                <a class="nav-link footer__nav-link" href="#"
-                  >حریم خصوصی</a
-                >
+                <a class="nav-link footer__nav-link" href="#">حریم خصوصی</a>
               </nav>
             </div>
             <div class="col-4 d-block d-md-none">
@@ -2807,11 +2829,9 @@
               >
                 <div class="footer__card-inner">
                   <div class="card assurance-card">
-                    <img
-                      src="./images/image-13.png"
-                      class="assurance-card__img card-img-top"
-                      alt="..."
-                    />
+                    <div
+                      class="assurance-card__img assurance-card__img--one"
+                    ></div>
                     <div class="card-body assurance-card__body">
                       <h5 class="card-title assurance-card__title">
                         تضمین اصالت کالا
@@ -2822,11 +2842,9 @@
                     </div>
                   </div>
                   <div class="card assurance-card">
-                    <img
-                      src="./images/image-12.png"
-                      class="assurance-card__img card-img-top"
-                      alt="..."
-                    />
+                    <div
+                      class="assurance-card__img assurance-card__img--two"
+                    ></div>
                     <div class="card-body assurance-card__body">
                       <h5 class="card-title assurance-card__title">
                         تضمین اصالت کالا
@@ -2837,11 +2855,9 @@
                     </div>
                   </div>
                   <div class="card assurance-card">
-                    <img
-                      src="./images/image-11.png"
-                      class="assurance-card__img card-img-top"
-                      alt="..."
-                    />
+                    <div
+                      class="assurance-card__img assurance-card__img--three"
+                    ></div>
                     <div class="card-body assurance-card__body">
                       <h5 class="card-title assurance-card__title">
                         تضمین اصالت کالا
@@ -2852,11 +2868,9 @@
                     </div>
                   </div>
                   <div class="card assurance-card">
-                    <img
-                      src="./images/image-10.png"
-                      class="assurance-card__img card-img-top"
-                      alt="..."
-                    />
+                    <div
+                      class="assurance-card__img assurance-card__img--four"
+                    ></div>
                     <div class="card-body assurance-card__body">
                       <h5 class="card-title assurance-card__title">
                         تضمین اصالت کالا
@@ -2933,14 +2947,23 @@
                   justify-content-center justify-content-md-start
                 "
               >
-                <a href="" class="footer__download-link">
-                  <img src="./images/cafebazaar.png" alt="" />
+                <a
+                  href=""
+                  class="footer__download-link footer__download-link--one"
+                >
                 </a>
-                <a href="" class="footer__download-link mx-sm-3">
-                  <img src="./images/android-direct.png" alt="" />
+                <a
+                  href=""
+                  class="
+                    footer__download-link footer__download-link--two
+                    mx-sm-3
+                  "
+                >
                 </a>
-                <a href="" class="footer__download-link">
-                  <img src="./images/sibapp.png" alt="" />
+                <a
+                  href=""
+                  class="footer__download-link footer__download-link--three"
+                >
                 </a>
               </div>
             </div>
@@ -2951,8 +2974,20 @@
                   justify-content-center justify-content-md-end
                 "
               >
-                <a href="" class="footer__download-link">
-                  <img src="./images/image-14.png" alt="" />
+                <a
+                  href=""
+                  class="footer__license-link footer__license-link--one"
+                >
+                </a>
+                <a
+                  href=""
+                  class="footer__license-link footer__license-link--two"
+                >
+                </a>
+                <a
+                  href=""
+                  class="footer__license-link footer__license-link--three"
+                >
                 </a>
               </div>
             </div>

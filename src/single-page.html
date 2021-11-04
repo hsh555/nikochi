@@ -4,11 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>خانه</title>
+    <title>صفحه محصول</title>
   </head>
   <body>
     <!-- start header -->
-    <header class="header">
+    <header class="header d-none d-md-block">
       <div class="header__top">
         <div class="custom-container">
           <div class="row">
@@ -192,7 +192,7 @@
     <!-- end header -->
 
     <!-- start custom-breadcrumb section -->
-    <section class="custom-breadcrumb d-none d-sm-block">
+    <section class="custom-breadcrumb d-none d-md-block">
       <div class="custom-container">
         <div class="row">
           <div class="col-12">
@@ -224,53 +224,119 @@
     </section>
     <!-- end custom-breadcrumb section -->
 
+    <!-- start single-product-mobile-header section -->
+    <section class="single-product-mobile-header d-block d-md-none">
+      <div class="custom-container">
+        <div class="row">
+          <div class="col-12">
+            <div class="single-product-mobile-header__content">
+              <span
+                class="
+                  single-product-mobile-header__backward
+                  icon-Chevron_right
+                "
+              ></span>
+              <span
+                class="single-product-mobile-header__heart icon-Heart"
+              ></span>
+
+              <span
+                class="single-product-mobile-header__more icon-More_vertical"
+              ></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end single-product-mobile-header section -->
+
     <!-- start single-product section -->
     <section class="single-product">
       <div class="custom-container">
         <div class="row justify-content-between">
-          <div class="col-5 custom-col-5">
-            <!-- <div class="single-product__zoom-slider" id="singleProductZoomy">
-
-            </div> -->
+          <div class="col-12 col-md-5 custom-col-5">
+            <div class="splide single-product__splide" id="main-slider">
+              <div class="splide__track single-product__splide__track">
+                <ul class="splide__list single-product__splide__list">
+                  <li class="splide__slide single-product__splide__slide">
+                    <img src="images/splide-1.png" />
+                  </li>
+                  <li class="splide__slide single-product__splide__slide">
+                    <img src="images/splide-1.png" />
+                  </li>
+                  <li class="splide__slide single-product__splide__slide">
+                    <img src="images/splide-1.png" />
+                  </li>
+                  <li class="splide__slide single-product__splide__slide">
+                    <img src="images/splide-1.png" />
+                  </li>
+                  <li class="splide__slide single-product__splide__slide">
+                    <img src="images/splide-1.png" />
+                  </li>
+                </ul>
+              </div>
+            </div>
             <div
-            style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff"
-            class="swiper mySwiper2"
-          >
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <img src="./images/tv-1.png" />
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="./images/tv-2.png" />
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="./images/tv-1.png" />
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="./images/tv-2.png" />
-                  </div>
+              id="thumbnail-slider"
+              class="splide single-product__thumbnail-splide"
+            >
+              <div
+                class="splide__track single-product__thumbnail-splide__track"
+              >
+                <ul class="splide__list single-product__thumbnail-splide__list">
+                  <li
+                    class="
+                      splide__slide
+                      single-product__thumbnail-splide__slide
+                    "
+                  >
+                    <img src="images/splide-1.png" />
+                  </li>
+                  <li
+                    class="
+                      splide__slide
+                      single-product__thumbnail-splide__slide
+                    "
+                  >
+                    <img src="images/splide-1.png" />
+                  </li>
+                  <li
+                    class="
+                      splide__slide
+                      single-product__thumbnail-splide__slide
+                    "
+                  >
+                    <img src="images/splide-1.png" />
+                  </li>
+                  <li
+                    class="
+                      splide__slide
+                      single-product__thumbnail-splide__slide
+                    "
+                  >
+                    <img src="images/splide-1.png" />
+                  </li>
+                  <li
+                    class="
+                      splide__slide
+                      single-product__thumbnail-splide__slide
+                    "
+                  >
+                    <img src="images/splide-1.png" />
+                  </li>
+                  <li
+                    class="
+                      splide__slide
+                      single-product__thumbnail-splide__slide
+                    "
+                  >
+                    <img src="images/splide-1.png" />
+                  </li>
+                </ul>
+              </div>
             </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
           </div>
-          <div thumbsSlider="" class="swiper mySwiper">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <img src="./images/tv-1.png" />
-              </div>
-              <div class="swiper-slide">
-                <img src="./images/tv-2.png" />
-              </div>
-              <div class="swiper-slide">
-                <img src="./images/tv-1.png" />
-              </div>
-              <div class="swiper-slide">
-                <img src="./images/tv-2.png" />
-              </div>
-            </div>
-          </div>
-          </div>
-          <div class="col-7 custom-col-7">
+          <div class="col-12 col-md-7 custom-col-7">
             <div class="single-product__header">
               <h1 class="single-product__title">
                 تلویزیون ال ای دی هوشمند جی پلاس 50 اینچ مدل GTV-50LU722S
@@ -293,15 +359,43 @@
             </div>
             <div class="single-product__body">
               <div class="single-product__body-top">
+                <div class="single-product__body-top__item">
+                  <span class="single-product__body-top__key">برند: </span>
+                  <span class="single-product__body-top__value"
+                    >جی پلاس Gplus</span
+                  >
+                </div>
+                <div class="single-product__body-top__item">
+                  <span class="single-product__body-top__key">دسته بندی: </span>
+                  <span class="single-product__body-top__value">تلویزیون</span>
+                </div>
+                <div class="single-product__body-top__item d-none d-md-block">
+                  <span
+                    class="single-product__body-top__icon icon-Heart"
+                  ></span>
+                  <span
+                    class="
+                      single-product__body-top__icon
+                      icon-Notification_bell_off
+                    "
+                  ></span>
+                  <span
+                    class="single-product__body-top__icon icon-Price-chart"
+                  ></span>
+                  <span class="single-product__body-top__icon icon-Copy"></span>
 
+                  <span
+                    class="single-product__body-top__icon icon-Share"
+                  ></span>
+                </div>
               </div>
               <div class="single-product__body-bottom">
                 <div class="row">
-                  <div class="col-7">
+                  <div class="col-sm-4 col-lg-6">
                     <div class="single-product__properties">
-                      <div class="single-product__properties__title">
-                        ویژگی های کالا
-                      </div>
+                      <h5 class="single-product__properties__title">
+                        ویژگی های کالا:
+                      </h5>
                       <ul
                         class="nav flex-column single-product__properties__nav"
                       >
@@ -331,21 +425,7 @@
                           تکنولوژی صفحه: LED
                         </li>
                       </ul>
-                      <p>
-                        <button
-                          class="
-                            btn btn-primary
-                            single-product__properties__collapse-btn
-                          "
-                          type="button"
-                          data-bs-toggle="collapse"
-                          data-bs-target="#collapseExample"
-                          aria-expanded="false"
-                          aria-controls="collapseExample"
-                        >
-                          موارد بیشتر
-                        </button>
-                      </p>
+
                       <div
                         class="collapse single-product__properties__collapse"
                         id="collapseExample"
@@ -406,6 +486,22 @@
                           </ul>
                         </div>
                       </div>
+                      <p>
+                        <button
+                          class="
+                            btn btn-primary
+                            single-product__properties__collapse-btn
+                          "
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#collapseExample"
+                          aria-expanded="false"
+                          aria-controls="collapseExample"
+                        >
+                          <span class="icon-Plus"></span>
+                          موارد بیشتر
+                        </button>
+                      </p>
                     </div>
                     <div class="single-product__color-selection">
                       <h5 class="single-product__color-selection__title">
@@ -418,18 +514,77 @@
                         "
                       >
                         <input
-                          class="form-check-input"
-                          type="checkbox"
+                          class="
+                            form-check-input
+                            single-product__color-selection__form-check-input
+                          "
+                          type="radio"
                           value=""
-                          id="flexCheckDefault1"
+                          name="colorSelectionRadio"
+                          id="colorRadioCheck1"
                         />
-                        <label class="form-check-label" for="flexCheckDefault1">
-                          Default checkbox
+                        <label
+                          class="
+                            single-product__color-selection__form-check-label
+                          "
+                          for="colorRadioCheck1"
+                          style="background-color: #000"
+                        >
+                        </label>
+                      </div>
+                      <div
+                        class="
+                          form-check
+                          single-product__color-selection__input-group
+                        "
+                      >
+                        <input
+                          class="
+                            form-check-input
+                            single-product__color-selection__form-check-input
+                          "
+                          type="radio"
+                          value=""
+                          name="colorSelectionRadio"
+                          id="colorRadioCheck2"
+                        />
+                        <label
+                          class="
+                            single-product__color-selection__form-check-label
+                          "
+                          for="colorRadioCheck2"
+                          style="background-color: rgb(26, 5, 65)"
+                        >
+                        </label>
+                      </div>
+                      <div
+                        class="
+                          form-check
+                          single-product__color-selection__input-group
+                        "
+                      >
+                        <input
+                          class="
+                            form-check-input
+                            single-product__color-selection__form-check-input
+                          "
+                          type="radio"
+                          value=""
+                          name="colorSelectionRadio"
+                          id="colorRadioCheck3"
+                        />
+                        <label
+                          class="
+                            single-product__color-selection__form-check-label
+                          "
+                          for="colorRadioCheck3"
+                          style="background-color: rgb(4, 117, 170)"
+                        >
                         </label>
                       </div>
                     </div>
                   </div>
-                  <div class="col-5">
+                  <div class="col-sm-8 col-lg-6">
                     <div class="single-product__price-box">
                       <div class="single-product__price-box__inner">
                         <div
@@ -458,13 +613,14 @@
                           <span
                             class="
                               icon-delivery-truck-1
-                              single-product__price-box-icon
+                              single-product__price-box__icon
                             "
                           ></span>
                           <span class="single-product__price-box__text">
                             با خرید این کالا 100 امتیاز دریافت می‌کنید.
                           </span>
                         </div>
+                        <div class="single-product__price-box__divider"></div>
                         <div
                           class="
                             single-product__price-box__item
@@ -474,7 +630,7 @@
                           <span
                             class="
                               icon-delivery-truck-1
-                              single-product__price-box-icon
+                              single-product__price-box__icon
                             "
                           ></span>
                           <span class="single-product__price-box__text">
@@ -490,51 +646,69 @@
                           <span
                             class="
                               icon-delivery-truck-1
-                              single-product__price-box-icon
+                              single-product__price-box__icon
                             "
                           ></span>
                           <span class="single-product__price-box__text">
                             آماده ارسال تا 24 ساعت کاری
                           </span>
                         </div>
+                        <div class="single-product__price-box__divider"></div>
+
                         <div
                           class="
                             single-product__price-box__item
                             single-product__price-box__price-item
                           "
                         >
-                        <span class="single-product__price-box____text">قیمت: </span>
-                        <div
-                        class="
-                          product-card__price product-card__price--off
-                        "
-                      >
-                        <div class="product-card__original-price">
-                          <span class="product-card__money-figure"
-                            >15.380.000</span
+                          <span class="single-product__price-box__text"
+                            >قیمت:
+                          </span>
+                          <div
+                            class="
+                              single-product__price-box__price
+                              single-product__price-box__price--off
+                            "
                           >
-                          <span
-                            class="product-card__badge badge rounded-pill"
-                            >%10</span
-                          >
+                            <div
+                              class="single-product__price-box__original-price"
+                            >
+                              <span
+                                class="single-product__price-box__money-figure"
+                                >15.380.000</span
+                              >
+                              <span
+                                class="
+                                  single-product__price-box__badge
+                                  badge
+                                  rounded-pill
+                                "
+                                >%10</span
+                              >
+                            </div>
+                            <div class="single-product__price-box__off-price">
+                              <span
+                                class="single-product__price-box__money-figure"
+                                >13.190.000</span
+                              >
+                              <span
+                                class="single-product__price-box__monetary-unit"
+                                >تومان</span
+                              >
+                            </div>
+                          </div>
                         </div>
-                        <div class="product-card__off-price">
-                          <span class="product-card__money-figure"
-                            >13.190.000</span
-                          >
-                          <span class="product-card__monetary-unit"
-                            >تومان</span
-                          >
-                        </div>
-                      </div>
-                    </div>
                       </div>
                       <div class="single-product__price-box__small-link">
                         آیا قیمت مناسب تری سراغ دارید؟
                         <span class="icon-Tag"></span>
                       </div>
                       <button
-                        class="btn custom-btn single-product__price-box__button"
+                        class="
+                          btn
+                          custom-btn custom-btn--primary
+                          single-product__price-box__button
+                        "
                       >
                         افزودن به سبد خرید
                       </button>
@@ -542,7 +716,1059 @@
                   </div>
                 </div>
               </div>
-              
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="custom-container">
+        <div class="row">
+          <div class="col-12">
+            <div class="single-product__nav-wrapper">
+              <nav class="nav single-product__nav">
+                <a
+                  class="nav-link single-product__nav-link"
+                  aria-current="page"
+                  href="#"
+                >
+                  <span class="icon-Equal"></span>
+                  توضیحات</a
+                >
+                <a class="nav-link single-product__nav-link" href="#">
+                  <span class="icon-Equal"></span>
+                  مشخصات فنی</a
+                >
+                <a class="nav-link single-product__nav-link" href="#">
+                  <span class="icon-Equal"></span>
+                  دیدگاه کاربران</a
+                >
+                <a class="nav-link single-product__nav-link" href="#">
+                  <span class="icon-Equal"></span>
+                  پرسش و پاسخ</a
+                >
+              </nav>
+              <div class="single-product__final-price">
+                <span class="single-product__final-price__amount"
+                  >13.190.000</span
+                >
+                <span class="single-product__final-price__monetary-unit"
+                  >تومان</span
+                >
+              </div>
+              <button
+                class="
+                  btn
+                  custom-btn custom-btn--primary
+                  single-product__info__btn
+                "
+              >
+                افزودن به سبد خرید
+              </button>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="single-product__description">
+              <h3 class="single-product__description__title">
+                معرفی تلویزیون ال ای دی هوشمند جی پلاس 50 اینچ مدل GTV-50LU722S
+              </h3>
+              <p class="single-product__description__text">
+                تلویزیون ال ای دی هوشمند جی پلاس مدل GTV-50LU722S توسط شرکت جی
+                پلاس به بازار عرضه شده است. این تلویزیون 50 اینچی، دارای سه
+                درگاه HDMI و دو درگاه USB است. از قابلیت‌های آن می‌توان به ARC-
+                Audio Return Channel اشاره کرد. گیرنده دیجیتالی این دستگاه شما
+                را خرید وسیله‌ی اضافی بی‌نیاز می‌کند و از طریق ویژگی ماشین زمان
+                (Time Shift) و Live play back می‌توانید تصاویر را بر روی حافظه
+                خارجی ضبط کنید و در فرصت مناسب به تماشای آن‌ها بنشینید. به این
+                طریق شما هیچکدام از برنامه‌های محبوب خود را از دست نخواهید داد.
+                به وسیله‌ی قابلیت mirroring و Mobile TV On می‌توانید تلویزیون را
+                با گوشی موبایل روشن کنید و یا صفحه‌ی موبایل خود را بر روی
+                تلویزیون نمایش دهید. این تلویزیون جی پلاس از کیفیت 4K بهره
+                می‌برد و تصویر مناسب و با کیفیتی را در اختیار شما می‌گذارد.
+                علاوه بر این هوشمند بودن آن امکان وب گردی و اتصال به اینترنت را
+                برای شما فراهم می‌کند.
+              </p>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="single-product__specs">
+              <h3 class="single-product__specs__title">
+                مشخصات فنی
+                <span class="single-product__specs__sub">
+                  GPlus GTV-50LU722S LED TV
+                </span>
+              </h3>
+              <div class="single-product__specs__content">
+                <div class="single-product__specs__content-inner">
+                  <h5 class="single-product__specs__content__title">
+                    صفحه نمایش
+                  </h5>
+                  <div class="single-product__specs__content__item-wrapper">
+                    <div class="single-product__specs__content__item-inner">
+                      <span class="single-product__specs__content__key"
+                        >اندازه صفحه</span
+                      >
+                      <span class="single-product__specs__content__value"
+                        >5 اینچ</span
+                      >
+                    </div>
+                    <div class="single-product__specs__content__item-inner">
+                      <span class="single-product__specs__content__key"
+                        >اندازه صفحه</span
+                      >
+                      <span class="single-product__specs__content__value"
+                        >5 اینچ</span
+                      >
+                    </div>
+                    <div class="single-product__specs__content__item-inner">
+                      <span class="single-product__specs__content__key"
+                        >نوع صفحه نمایش</span
+                      >
+                      <span class="single-product__specs__content__value"
+                        >LED</span
+                      >
+                    </div>
+                  </div>
+                </div>
+
+                <div class="collapse" id="singleProductSpecsCollapse">
+                  <div class="card card-body single-product__specs__card-body">
+                    <div class="single-product__specs__content-inner">
+                      <h5 class="single-product__specs__content__title">
+                        صفحه نمایش
+                      </h5>
+                      <div class="single-product__specs__content__item-wrapper">
+                        <div class="single-product__specs__content__item-inner">
+                          <span class="single-product__specs__content__key"
+                            >اندازه صفحه</span
+                          >
+                          <span class="single-product__specs__content__value"
+                            >5 اینچ</span
+                          >
+                        </div>
+                        <div class="single-product__specs__content__item-inner">
+                          <span class="single-product__specs__content__key"
+                            >اندازه صفحه</span
+                          >
+                          <span class="single-product__specs__content__value"
+                            >5 اینچ</span
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <p class="text-center">
+                  <button
+                    class="btn btn-primary single-product__specs__collapse__btn"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#singleProductSpecsCollapse"
+                    aria-expanded="false"
+                    aria-controls="singleProductSpecsCollapse"
+                  >
+                    مشاهده بیشتر
+                    <span class="icon-Chevron_down"></span>
+                  </button>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 custom-col">
+            <section class="intro-section">
+              <div class="custom-container">
+                <div class="row">
+                  <div class="col-12">
+                    <h2 class="intro-section__title">کالاهای مشابه</h2>
+                  </div>
+                  <div class="col-12 custom-col">
+                    <div class="owl-carousel intro-section__carousel">
+                      <div class="card product-card item">
+                        <img
+                          src="images/product-1.png"
+                          class="card-img-top product-card__img"
+                          alt="..."
+                        />
+                        <div class="card-body product-card__body">
+                          <h5
+                            class="
+                              card-title
+                              product-card__title product-card__title--off
+                            "
+                          >
+                            یخچال فریزر 24 فوت دوو سری 660 پلاس مدل D4BF-1077 TI
+                          </h5>
+                          <div class="product-card__info">
+                            <div class="product-card__dots">
+                              <span
+                                class="product-card__dot product-card__dot-dark"
+                              ></span>
+                              <span
+                                class="
+                                  product-card__dot product-card__dot-white
+                                "
+                              ></span>
+                              <span
+                                class="product-card__dot product-card__dot-gray"
+                              ></span>
+                            </div>
+                            <div
+                              class="
+                                product-card__price product-card__price--off
+                              "
+                            >
+                              <div class="product-card__original-price">
+                                <span class="product-card__money-figure"
+                                  >15.380.000</span
+                                >
+                                <span
+                                  class="product-card__badge badge rounded-pill"
+                                  >%10</span
+                                >
+                              </div>
+                              <div class="product-card__off-price">
+                                <span class="product-card__money-figure"
+                                  >13.190.000</span
+                                >
+                                <span class="product-card__monetary-unit"
+                                  >تومان</span
+                                >
+                              </div>
+                            </div>
+                            <span class="icon-Heart product-card__icon"></span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card product-card item">
+                        <img
+                          src="images/product-2.png"
+                          class="card-img-top product-card__img"
+                          alt="..."
+                        />
+                        <div class="card-body product-card__body">
+                          <h5 class="card-title product-card__title">
+                            یخچال فریزر 24 فوت دوو سری 660 پلاس مدل D4BF-1077 TI
+                          </h5>
+                          <div class="product-card__info">
+                            <div class="product-card__dots">
+                              <span
+                                class="product-card__dot product-card__dot-dark"
+                              ></span>
+                              <span
+                                class="
+                                  product-card__dot product-card__dot-white
+                                "
+                              ></span>
+                              <span
+                                class="product-card__dot product-card__dot-gray"
+                              ></span>
+                            </div>
+                            <div
+                              class="product-card__price product-card__price"
+                            >
+                              <div class="product-card__original-price">
+                                <span class="product-card__money-figure"
+                                  >15.380.000</span
+                                >
+                                <span class="product-card__monetary-unit"
+                                  >تومان</span
+                                >
+                              </div>
+                            </div>
+                            <span class="icon-Heart product-card__icon"></span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card product-card item">
+                        <img
+                          src="images/product-3.png"
+                          class="card-img-top product-card__img"
+                          alt="..."
+                        />
+                        <div class="card-body product-card__body">
+                          <h5 class="card-title product-card__title">
+                            یخچال فریزر 24 فوت دوو سری 660 پلاس مدل D4BF-1077 TI
+                          </h5>
+                          <div class="product-card__info">
+                            <div class="product-card__dots">
+                              <span
+                                class="product-card__dot product-card__dot-dark"
+                              ></span>
+                              <span
+                                class="
+                                  product-card__dot product-card__dot-white
+                                "
+                              ></span>
+                              <span
+                                class="product-card__dot product-card__dot-gray"
+                              ></span>
+                            </div>
+                            <div
+                              class="product-card__price product-card__price"
+                            >
+                              <div class="product-card__original-price">
+                                <span class="product-card__money-figure"
+                                  >15.380.000</span
+                                >
+                                <span class="product-card__monetary-unit"
+                                  >تومان</span
+                                >
+                              </div>
+                            </div>
+                            <span class="icon-Heart product-card__icon"></span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card product-card item">
+                        <img
+                          src="images/product-4.png"
+                          class="card-img-top product-card__img"
+                          alt="..."
+                        />
+                        <div class="card-body product-card__body">
+                          <h5 class="card-title product-card__title">
+                            یخچال فریزر 24 فوت دوو سری 660 پلاس مدل D4BF-1077 TI
+                          </h5>
+                          <div class="product-card__info">
+                            <div class="product-card__dots">
+                              <span
+                                class="product-card__dot product-card__dot-dark"
+                              ></span>
+                              <span
+                                class="
+                                  product-card__dot product-card__dot-white
+                                "
+                              ></span>
+                              <span
+                                class="product-card__dot product-card__dot-gray"
+                              ></span>
+                            </div>
+                            <div
+                              class="product-card__price product-card__price"
+                            >
+                              <div class="product-card__original-price">
+                                <span class="product-card__money-figure"
+                                  >15.380.000</span
+                                >
+                                <span class="product-card__monetary-unit"
+                                  >تومان</span
+                                >
+                              </div>
+                            </div>
+                            <span class="icon-Heart product-card__icon"></span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card product-card item">
+                        <img
+                          src="images/product-5.png"
+                          class="card-img-top product-card__img"
+                          alt="..."
+                        />
+                        <div class="card-body product-card__body">
+                          <h5 class="card-title product-card__title">
+                            یخچال فریزر 24 فوت دوو سری 660 پلاس مدل D4BF-1077 TI
+                          </h5>
+                          <div class="product-card__info">
+                            <div class="product-card__dots">
+                              <span
+                                class="product-card__dot product-card__dot-dark"
+                              ></span>
+                              <span
+                                class="
+                                  product-card__dot product-card__dot-white
+                                "
+                              ></span>
+                              <span
+                                class="product-card__dot product-card__dot-gray"
+                              ></span>
+                            </div>
+                            <div
+                              class="product-card__price product-card__price"
+                            >
+                              <div class="product-card__original-price">
+                                <span class="product-card__money-figure"
+                                  >15.380.000</span
+                                >
+                                <span class="product-card__monetary-unit"
+                                  >تومان</span
+                                >
+                              </div>
+                            </div>
+                            <span class="icon-Heart product-card__icon"></span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card product-card item">
+                        <img
+                          src="images/product-1.png"
+                          class="card-img-top product-card__img"
+                          alt="..."
+                        />
+                        <div class="card-body product-card__body">
+                          <h5 class="card-title product-card__title">
+                            یخچال فریزر 24 فوت دوو سری 660 پلاس مدل D4BF-1077 TI
+                          </h5>
+                          <div class="product-card__info">
+                            <div class="product-card__dots">
+                              <span
+                                class="product-card__dot product-card__dot-dark"
+                              ></span>
+                              <span
+                                class="
+                                  product-card__dot product-card__dot-white
+                                "
+                              ></span>
+                              <span
+                                class="product-card__dot product-card__dot-gray"
+                              ></span>
+                            </div>
+                            <div
+                              class="product-card__price product-card__price"
+                            >
+                              <div class="product-card__original-price">
+                                <span class="product-card__money-figure"
+                                  >15.380.000</span
+                                >
+                                <span class="product-card__monetary-unit"
+                                  >تومان</span
+                                >
+                              </div>
+                            </div>
+                            <span class="icon-Heart product-card__icon"></span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card product-card item">
+                        <img
+                          src="images/product-2.png"
+                          class="card-img-top product-card__img"
+                          alt="..."
+                        />
+                        <div class="card-body product-card__body">
+                          <h5 class="card-title product-card__title">
+                            یخچال فریزر 24 فوت دوو سری 660 پلاس مدل D4BF-1077 TI
+                          </h5>
+                          <div class="product-card__info">
+                            <div class="product-card__dots">
+                              <span
+                                class="product-card__dot product-card__dot-dark"
+                              ></span>
+                              <span
+                                class="
+                                  product-card__dot product-card__dot-white
+                                "
+                              ></span>
+                              <span
+                                class="product-card__dot product-card__dot-gray"
+                              ></span>
+                            </div>
+                            <div
+                              class="product-card__price product-card__price"
+                            >
+                              <div class="product-card__original-price">
+                                <span class="product-card__money-figure"
+                                  >15.380.000</span
+                                >
+                                <span class="product-card__monetary-unit"
+                                  >تومان</span
+                                >
+                              </div>
+                            </div>
+                            <span class="icon-Heart product-card__icon"></span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card product-card item">
+                        <img
+                          src="images/product-3.png"
+                          class="card-img-top product-card__img"
+                          alt="..."
+                        />
+                        <div class="card-body product-card__body">
+                          <h5 class="card-title product-card__title">
+                            یخچال فریزر 24 فوت دوو سری 660 پلاس مدل D4BF-1077 TI
+                          </h5>
+                          <div class="product-card__info">
+                            <div class="product-card__dots">
+                              <span
+                                class="product-card__dot product-card__dot-dark"
+                              ></span>
+                              <span
+                                class="
+                                  product-card__dot product-card__dot-white
+                                "
+                              ></span>
+                              <span
+                                class="product-card__dot product-card__dot-gray"
+                              ></span>
+                            </div>
+                            <div
+                              class="product-card__price product-card__price"
+                            >
+                              <div class="product-card__original-price">
+                                <span class="product-card__money-figure"
+                                  >15.380.000</span
+                                >
+                                <span class="product-card__monetary-unit"
+                                  >تومان</span
+                                >
+                              </div>
+                            </div>
+                            <span class="icon-Heart product-card__icon"></span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card product-card item">
+                        <img
+                          src="images/product-4.png"
+                          class="card-img-top product-card__img"
+                          alt="..."
+                        />
+                        <div class="card-body product-card__body">
+                          <h5 class="card-title product-card__title">
+                            یخچال فریزر 24 فوت دوو سری 660 پلاس مدل D4BF-1077 TI
+                          </h5>
+                          <div class="product-card__info">
+                            <div class="product-card__dots">
+                              <span
+                                class="product-card__dot product-card__dot-dark"
+                              ></span>
+                              <span
+                                class="
+                                  product-card__dot product-card__dot-white
+                                "
+                              ></span>
+                              <span
+                                class="product-card__dot product-card__dot-gray"
+                              ></span>
+                            </div>
+                            <div
+                              class="product-card__price product-card__price"
+                            >
+                              <div class="product-card__original-price">
+                                <span class="product-card__money-figure"
+                                  >15.380.000</span
+                                >
+                                <span class="product-card__monetary-unit"
+                                  >تومان</span
+                                >
+                              </div>
+                            </div>
+                            <span class="icon-Heart product-card__icon"></span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card product-card item">
+                        <img
+                          src="images/product-5.png"
+                          class="card-img-top product-card__img"
+                          alt="..."
+                        />
+                        <div class="card-body product-card__body">
+                          <h5 class="card-title product-card__title">
+                            یخچال فریزر 24 فوت دوو سری 660 پلاس مدل D4BF-1077 TI
+                          </h5>
+                          <div class="product-card__info">
+                            <div class="product-card__dots">
+                              <span
+                                class="product-card__dot product-card__dot-dark"
+                              ></span>
+                              <span
+                                class="
+                                  product-card__dot product-card__dot-white
+                                "
+                              ></span>
+                              <span
+                                class="product-card__dot product-card__dot-gray"
+                              ></span>
+                            </div>
+                            <div
+                              class="product-card__price product-card__price"
+                            >
+                              <div class="product-card__original-price">
+                                <span class="product-card__money-figure"
+                                  >15.380.000</span
+                                >
+                                <span class="product-card__monetary-unit"
+                                  >تومان</span
+                                >
+                              </div>
+                            </div>
+                            <span class="icon-Heart product-card__icon"></span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+          <div class="col-12">
+            <div class="single-product__comments single-product__section">
+              <div class="single-product__section__header">
+                <h3 class="single-product__section__title">دیدگاه دیگران</h3>
+                <nav class="nav single-product__section__nav">
+                  <div class="single-product__section__nav-title">
+                    <span
+                      class="icon-sort single-product__section__nav-title__icon"
+                    ></span>
+                    <span class="single-product__section__nav-title__text">
+                      مرتب سازی بر اساس:
+                    </span>
+                  </div>
+                  <a
+                    class="
+                      nav-link
+                      single-product__section__nav-link
+                      single-product__section__nav-link--active
+                    "
+                    aria-current="page"
+                    href="#"
+                    >جدیدترین دیدگاه ها</a
+                  >
+                  <a class="nav-link single-product__section__nav-link" href="#"
+                    >مفیدترین دیدگاه ها</a
+                  >
+                  <a class="nav-link single-product__section__nav-link" href="#"
+                    >خریداران کالا</a
+                  >
+                </nav>
+              </div>
+
+              <div class="single-product__comments__body">
+                <div class="row gx-3 gx-lg-4">
+                  <div class="col-12 col-lg-6 order-2 order-lg-1">
+                    <div class="single-product__comment">
+                      <span
+                        class="
+                          single-product__comment__recommend
+                          single-product__comment__recommend--true
+                        "
+                      >
+                        <span class="icon-Like"></span>
+                        پیشنهاد میکنم</span
+                      >
+                      <h5 class="single-product__comment__title">
+                        درباره خرید تلویزیون 50اینچ جی پلاس
+                      </h5>
+                      <div class="single-product__comment__text">
+                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت
+                        چاپلورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت
+                        چاپلورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت
+                        چاپلورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت
+                        چاپ
+                      </div>
+
+                      <div class="single-product__comment__points">
+                        <span
+                          class="
+                            single-product__comment__points__item
+                            single-product__comment__points__item--pos
+                          "
+                        >
+                          <span class="icon-Plus"></span>
+                          نکات مثبت</span
+                        >
+                        <span
+                          class="
+                            single-product__comment__points__item
+                            single-product__comment__points__item--pos
+                          "
+                        >
+                          <span class="icon-Plus"></span>
+                          نکات مثبت</span
+                        >
+                        <span
+                          class="
+                            single-product__comment__points__item
+                            single-product__comment__points__item--neg
+                          "
+                        >
+                          <span class="icon-Plus"></span>
+                          نکات منفی</span
+                        >
+                      </div>
+
+                      <div class="single-product__comment__footer">
+                        <div class="single-product__comment__info">
+                          <span class="single-product__comment__sender"
+                            >عبدالحمید احمدی</span
+                          >
+                          <span class="single-product__comment__dot"></span>
+                          <span class="single-product__comment__date"
+                            >30 بهمن 1399</span
+                          >
+                        </div>
+                        <div class="single-product__comment__rate">
+                          <div class="single-product__comment__rate__like">
+                            <span class="icon-Like"></span>
+                            10
+                          </div>
+                          <div class="single-product__comment__rate__dislike">
+                            <span class="icon-Dislike"></span>
+                            0
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="single-product__comment">
+                      <span
+                        class="
+                          single-product__comment__recommend
+                          single-product__comment__recommend--false
+                        "
+                      >
+                        <span class="icon-Dislike"></span>
+                        پیشنهاد نمیکنم</span
+                      >
+                      <h5 class="single-product__comment__title">
+                        درباره خرید تلویزیون 50اینچ جی پلاس
+                      </h5>
+                      <div class="single-product__comment__text">
+                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت
+                        چاپلورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت
+                        چاپلورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت
+                        چاپلورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت
+                        چاپ
+                      </div>
+
+                      <div class="single-product__comment__points">
+                        <span
+                          class="
+                            single-product__comment__points__item
+                            single-product__comment__points__item--pos
+                          "
+                        >
+                          <span class="icon-Plus"></span>
+                          نکات مثبت</span
+                        >
+                        <span
+                          class="
+                            single-product__comment__points__item
+                            single-product__comment__points__item--pos
+                          "
+                        >
+                          <span class="icon-Plus"></span>
+                          نکات مثبت</span
+                        >
+                        <span
+                          class="
+                            single-product__comment__points__item
+                            single-product__comment__points__item--neg
+                          "
+                        >
+                          <span class="icon-Plus"></span>
+                          نکات منفی</span
+                        >
+                      </div>
+
+                      <div class="single-product__comment__footer">
+                        <div class="single-product__comment__info">
+                          <span class="single-product__comment__sender"
+                            >عبدالحمید احمدی</span
+                          >
+                          <span class="single-product__comment__dot"></span>
+                          <span class="single-product__comment__date"
+                            >30 بهمن 1399</span
+                          >
+                        </div>
+                        <div class="single-product__comment__rate">
+                          <div class="single-product__comment__rate__like">
+                            <span class="icon-Like"></span>
+                            10
+                          </div>
+                          <div class="single-product__comment__rate__dislike">
+                            <span class="icon-Dislike"></span>
+                            0
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-lg-6 order-1 order-lg-2">
+                    <div class="single-product__review">
+                      <div class="single-product__review__inner">
+                        <div class="single-product__review__rate">
+                          <h2 class="single-product__review__rate__num">4</h2>
+                          <div class="single-product__review__rate__stars">
+                            <span class="icon-Star"></span>
+                            <span class="icon-Star"></span>
+                            <span class="icon-Star"></span>
+                            <span class="icon-Star"></span>
+                            <span class="icon-Star"></span>
+                          </div>
+                          <span class="single-product__review__rate__text"
+                            >از مجموع 23 نظر</span
+                          >
+                        </div>
+
+                        <div class="single-product__review__performance">
+                          <div
+                            class="single-product__review__performance__item"
+                          >
+                            <span
+                              class="single-product__review__performance__text"
+                              >کیفیت و شفافیت</span
+                            >
+                            <div
+                              class="
+                                progress
+                                single-product__review__performance__progress
+                              "
+                            >
+                              <div
+                                class="progress-bar w-75"
+                                role="progressbar"
+                                aria-valuenow="75"
+                                aria-valuemin="0"
+                                aria-valuemax="100"
+                              ></div>
+                            </div>
+                            <span
+                              class="single-product__review__performance__rate"
+                              >3.8</span
+                            >
+                          </div>
+                          <div
+                            class="single-product__review__performance__item"
+                          >
+                            <span
+                              class="single-product__review__performance__text"
+                              >امکانات و قابلیت ها</span
+                            >
+                            <div
+                              class="
+                                progress
+                                single-product__review__performance__progress
+                              "
+                            >
+                              <div
+                                class="progress-bar w-75"
+                                role="progressbar"
+                                aria-valuenow="75"
+                                aria-valuemin="0"
+                                aria-valuemax="100"
+                              ></div>
+                            </div>
+                            <span
+                              class="single-product__review__performance__rate"
+                              >3.8</span
+                            >
+                          </div>
+                          <div
+                            class="single-product__review__performance__item"
+                          >
+                            <span
+                              class="single-product__review__performance__text"
+                              >سهولت در کاربری</span
+                            >
+                            <div
+                              class="
+                                progress
+                                single-product__review__performance__progress
+                              "
+                            >
+                              <div
+                                class="progress-bar w-75"
+                                role="progressbar"
+                                aria-valuenow="75"
+                                aria-valuemin="0"
+                                aria-valuemax="100"
+                              ></div>
+                            </div>
+                            <span
+                              class="single-product__review__performance__rate"
+                              >3.8</span
+                            >
+                          </div>
+                          <div
+                            class="single-product__review__performance__item"
+                          >
+                            <span
+                              class="single-product__review__performance__text"
+                              >ارزش در برابر قیمت</span
+                            >
+                            <div
+                              class="
+                                progress
+                                single-product__review__performance__progress
+                              "
+                            >
+                              <div
+                                class="progress-bar w-75"
+                                role="progressbar"
+                                aria-valuenow="75"
+                                aria-valuemin="0"
+                                aria-valuemax="100"
+                              ></div>
+                            </div>
+                            <span
+                              class="single-product__review__performance__rate"
+                              >3.8</span
+                            >
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="single-product__review__add-comment">
+                        <h3 class="single-product__review__add-comment__title">
+                          شما هم نظر دهید
+                        </h3>
+                        <p class="single-product__review__add-comment__text">
+                          با ارسال نظر ضمن کمک به دیگران، اگر کالا را از نیکوچی
+                          خریده باشید امتیاز دریافت خواهید کرد.
+                        </p>
+                        <button
+                          class="
+                            btn
+                            custom-btn custom-btn--secondary
+                            single-product__review__btn
+                          "
+                        >
+                          ارسال نظر جدید
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="single-product__questions single-product__section">
+              <div class="single-product__section__header">
+                <h3 class="single-product__section__title">پرسش های کاربران</h3>
+                <nav class="nav single-product__section__nav">
+                  <div class="single-product__section__nav-title">
+                    <span
+                      class="single-product__section__nav-title__icon icon-sort"
+                    ></span>
+                    <span class="single-product__section__nav-title__text">
+                      مرتب سازی بر اساس:
+                    </span>
+                  </div>
+                  <a
+                    class="
+                      nav-link
+                      single-product__section__nav-link
+                      single-product__section__nav-link--active
+                    "
+                    aria-current="page"
+                    href="#"
+                    >جدیدترین دیدگاه ها</a
+                  >
+                  <a class="nav-link single-product__section__nav-link" href="#"
+                    >مفیدترین دیدگاه ها</a
+                  >
+                  <a class="nav-link single-product__section__nav-link" href="#"
+                    >خریداران کالا</a
+                  >
+                </nav>
+              </div>
+
+              <form class="add-question-form">
+                <div class="add-question-form__icon icon-Frame"></div>
+                <div class="add-question-form__form-group">
+                  <label
+                    for="addQuestionTextarea"
+                    class="form-label add-question-form__form-label"
+                    >پرسش خود را مطرح کنید</label
+                  >
+                  <textarea
+                    class="form-control add-question-form__form-control"
+                    id="addQuestionTextarea"
+                  ></textarea>
+                  <button
+                    class="
+                      btn
+                      custom-btn custom-btn--secondary
+                      add-question-fomt__btn
+                    "
+                  >
+                    ثبت پرسش
+                  </button>
+                </div>
+              </form>
+
+              <div class="single-product__question__items">
+                <div class="single-product__question">
+                  <div class="single-product__question__main">
+                    <span
+                      class="single-product__question__icon icon-Frame"
+                    ></span>
+                    <div class="single-product__question__content">
+                      <div class="single-product__question__info">
+                        <span class="single-product__question__sender"
+                          >عبدالحمید رضایی</span
+                        >
+                        <span class="single-product__question__date"
+                          >20 بهمن 1400</span
+                        >
+                      </div>
+                      <p class="single-product__question__text">
+                        سال ساخت ال جی جی پلاس چی سالی هستش؟
+                      </p>
+                    </div>
+                    <button
+                      class="btn custom-btn single-product__question__btn"
+                    >
+                      <span class="icon-Forward"></span>
+                      پاسخ به این پرسش
+                    </button>
+                  </div>
+                </div>
+                <div class="single-product__question">
+                  <div class="single-product__question__main">
+                    <span
+                      class="single-product__question__icon icon-Frame"
+                    ></span>
+                    <div class="single-product__question__content">
+                      <div class="single-product__question__info">
+                        <span class="single-product__question__sender"
+                          >عبدالحمید رضایی</span
+                        >
+                        <span class="single-product__question__date"
+                          >20 بهمن 1400</span
+                        >
+                      </div>
+                      <p class="single-product__question__text">
+                        سال ساخت ال جی جی پلاس چی سالی هستش؟
+                      </p>
+                    </div>
+                    <button
+                      class="btn custom-btn single-product__question__btn"
+                    >
+                      <span class="icon-Forward"></span>
+                      پاسخ به این پرسش
+                    </button>
+                  </div>
+                  <div class="single-product__question__answer">
+                    <div class="single-product__question__answer__content">
+                      <div class="single-product__question__answer__info">
+                        <span class="single-product__question__answer__sender"
+                          >عبدالحمید رضایی</span
+                        >
+                        <span class="single-product__question__answer__date"
+                          >20 بهمن 1400</span
+                        >
+                      </div>
+                      <p class="single-product__question__answer__text">
+                        با سلام، بله کنترل هوشمند همراه تلویزیون می باشد.
+                      </p>
+                    </div>
+                    <div class="single-product__question__answer__rate">
+                      <div class="single-product__question__answer__like">
+                        <span class="icon-Like"></span>
+                        0
+                      </div>
+                      <div class="single-product__question__answer__dislike">
+                        <span class="icon-Dislike"></span>
+                        0
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -556,38 +1782,47 @@
         <div class="custom-container">
           <div class="row">
             <div class="col-12">
-              <h4 class="footer__title">
-                فروشگاه اینترنتی نیکوچی | نقد ، بررسی و خرید آنلاین لوازم خانگی
-              </h4>
-              <div class="collapse footer__collapse" id="collapseExample">
-                <div class="card card-body footer__description">
-                  تیم بوش پلاس دارای بیش از دو دهه فعالیت موثر در بازار لوازم
-                  خانگی ایران به صورت سنتی است و بنا به درخواست مشتریان و رفاه
-                  حال آن ها ، همچنین گسترش روز افزون اینترنت در کشور ، در سال 96
-                  اقدام به راه اندازی سایت بوش پلاس نموده است. از مهم ترین اهداف
-                  مجموعه بوش پلاس عرضه محصولات با کمترین قیمت ، گارانتی های اصل
-                  ، ارسال سریع و رایگان و پیگیری سریع سفارشات میباشد . در حال
-                  حاضر این فروشگاه دارای تیم های تخصصی در حوزه های فروش ،
-                  مارکتینگ ، تامین کالا ، برنامه نویسی ، محتوا نویسی و ارسال
-                  بوده که در ساعات کاری پاسخگوی مشتریان عزیز میباشند. فروشگاه
-                  اینترنتی بوش پلاس دارای دو شعبه در سه راه امین حضور بوده که
-                  مراجعین محترم علاوه بر خرید اینترنتی ، میتوانند با مراجعه
-                  حضوری به شعبات ، محصول مورد نظر را مشاهده و خریداری نمایند.
-                </div>
-              </div>
-              <p class="custom-collapse__link-wrapper d-block d-lg-none">
-                <a
-                  class="footer__collapse-toggler"
-                  data-bs-toggle="collapse"
-                  href="#collapseExample"
-                  role="button"
-                  aria-expanded="false"
-                  aria-controls="collapseExample"
+              <div class="custom-collapse">
+                <h4 class="custom-collapse__title">
+                  فروشگاه اینترنتی نیکوچی | نقد ، بررسی و خرید آنلاین لوازم
+                  خانگی
+                </h4>
+                <div
+                  class="
+                    collapse
+                    custom-collapse__content custom-collapse__collapse
+                  "
+                  id="footerCollapse"
                 >
-                  <span class="custom-collapse__close">مشاهده بیشتر</span>
-                  <span class="custom-collapse__open">بستن</span>
-                </a>
-              </p>
+                  <div class="card card-body custom-collapse__card-body">
+                    تیم بوش پلاس دارای بیش از دو دهه فعالیت موثر در بازار لوازم
+                    خانگی ایران به صورت سنتی است و بنا به درخواست مشتریان و رفاه
+                    حال آن ها ، همچنین گسترش روز افزون اینترنت در کشور ، در سال
+                    96 اقدام به راه اندازی سایت بوش پلاس نموده است. از مهم ترین
+                    اهداف مجموعه بوش پلاس عرضه محصولات با کمترین قیمت ، گارانتی
+                    های اصل ، ارسال سریع و رایگان و پیگیری سریع سفارشات میباشد .
+                    در حال حاضر این فروشگاه دارای تیم های تخصصی در حوزه های فروش
+                    ، مارکتینگ ، تامین کالا ، برنامه نویسی ، محتوا نویسی و ارسال
+                    بوده که در ساعات کاری پاسخگوی مشتریان عزیز میباشند. فروشگاه
+                    اینترنتی بوش پلاس دارای دو شعبه در سه راه امین حضور بوده که
+                    مراجعین محترم علاوه بر خرید اینترنتی ، میتوانند با مراجعه
+                    حضوری به شعبات ، محصول مورد نظر را مشاهده و خریداری نمایند.
+                  </div>
+                </div>
+                <p class="custom-collapse__link-wrapper d-block d-lg-none">
+                  <a
+                    class="custom-collapse__toggler"
+                    data-bs-toggle="collapse"
+                    href="#footerCollapse"
+                    role="button"
+                    aria-expanded="false"
+                    aria-controls="footerCollapse"
+                  >
+                    <span class="custom-collapse__close">مشاهده بیشتر</span>
+                    <span class="custom-collapse__open">بستن</span>
+                  </a>
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -657,11 +1892,9 @@
               >
                 <div class="footer__card-inner">
                   <div class="card assurance-card">
-                    <img
-                      src="./images/image-13.png"
-                      class="assurance-card__img card-img-top"
-                      alt="..."
-                    />
+                    <div
+                      class="assurance-card__img assurance-card__img--one"
+                    ></div>
                     <div class="card-body assurance-card__body">
                       <h5 class="card-title assurance-card__title">
                         تضمین اصالت کالا
@@ -672,11 +1905,9 @@
                     </div>
                   </div>
                   <div class="card assurance-card">
-                    <img
-                      src="./images/image-12.png"
-                      class="assurance-card__img card-img-top"
-                      alt="..."
-                    />
+                    <div
+                      class="assurance-card__img assurance-card__img--two"
+                    ></div>
                     <div class="card-body assurance-card__body">
                       <h5 class="card-title assurance-card__title">
                         تضمین اصالت کالا
@@ -687,11 +1918,9 @@
                     </div>
                   </div>
                   <div class="card assurance-card">
-                    <img
-                      src="./images/image-11.png"
-                      class="assurance-card__img card-img-top"
-                      alt="..."
-                    />
+                    <div
+                      class="assurance-card__img assurance-card__img--three"
+                    ></div>
                     <div class="card-body assurance-card__body">
                       <h5 class="card-title assurance-card__title">
                         تضمین اصالت کالا
@@ -702,11 +1931,9 @@
                     </div>
                   </div>
                   <div class="card assurance-card">
-                    <img
-                      src="./images/image-10.png"
-                      class="assurance-card__img card-img-top"
-                      alt="..."
-                    />
+                    <div
+                      class="assurance-card__img assurance-card__img--four"
+                    ></div>
                     <div class="card-body assurance-card__body">
                       <h5 class="card-title assurance-card__title">
                         تضمین اصالت کالا
@@ -783,14 +2010,23 @@
                   justify-content-center justify-content-md-start
                 "
               >
-                <a href="" class="footer__download-link">
-                  <img src="./images/cafebazaar.png" alt="" />
+                <a
+                  href=""
+                  class="footer__download-link footer__download-link--one"
+                >
                 </a>
-                <a href="" class="footer__download-link mx-sm-3">
-                  <img src="./images/android-direct.png" alt="" />
+                <a
+                  href=""
+                  class="
+                    footer__download-link footer__download-link--two
+                    mx-sm-3
+                  "
+                >
                 </a>
-                <a href="" class="footer__download-link">
-                  <img src="./images/sibapp.png" alt="" />
+                <a
+                  href=""
+                  class="footer__download-link footer__download-link--three"
+                >
                 </a>
               </div>
             </div>
@@ -801,8 +2037,20 @@
                   justify-content-center justify-content-md-end
                 "
               >
-                <a href="" class="footer__download-link">
-                  <img src="./images/image-14.png" alt="" />
+                <a
+                  href=""
+                  class="footer__license-link footer__license-link--one"
+                >
+                </a>
+                <a
+                  href=""
+                  class="footer__license-link footer__license-link--two"
+                >
+                </a>
+                <a
+                  href=""
+                  class="footer__license-link footer__license-link--three"
+                >
                 </a>
               </div>
             </div>
@@ -836,6 +2084,30 @@
           <span class="mobile-menu__nav-text">پروفایل</span>
         </a>
       </nav>
+    </div>
+    <!-- end mobile-menu -->
+
+    <!-- start mobile-menu -->
+    <div class="mobile-fixed-board">
+      <button class="btn custom-btn custom-btn--primary mobile-fixed-board__btn">
+        افزودن به سبد خرید
+      </button>
+      <div class="mobile-fixed-board__price mobile-fixed-board__price--off">
+        <div class="mobile-fixed-board__price__original-price">
+          <span class="mobile-fixed-board__price__money-figure"
+            >15.380.000</span
+          >
+          <span class="mobile-fixed-board__price__badge badge rounded-pill"
+            >%10</span
+          >
+        </div>
+        <div class="mobile-fixed-board__price__off-price">
+          <span class="mobile-fixed-board__price__money-figure"
+            >13.190.000</span
+          >
+          <span class="mobile-fixed-board__price__monetary-unit">تومان</span>
+        </div>
+      </div>
     </div>
     <!-- end mobile-menu -->
   </body>

@@ -2,65 +2,6 @@
     padding: 30px 0;
     border-top: 1px solid #ccc;
 
-    .footer__title {
-        font-size: 14px;
-        margin-bottom: 15px;
-        font-weight: bold;
-        color: #444;
-        text-align: center;
-        letter-spacing: -0.7px;
-    }
-
-    .footer__description {
-        border: 0;
-        font-size: 12px;
-        font-weight: 300;
-        color: #444;
-        line-height: 16px;
-        text-align: center;
-    }
-
-    .custom-collapse__close {
-        display: block;
-    }
-    .custom-collapse__open {
-        display: none;
-    }
-    .footer__collapse {
-        display: block;
-        height: 95px;
-        overflow: hidden;
-
-        &.show {
-            height: auto;
-
-            & ~ .custom-collapse__link-wrapper {
-                .custom-collapse__close {
-                    display: none !important;
-                }
-                .custom-collapse__open {
-                    display: block !important;
-                }
-            }
-        }
-    }
-
-    .custom-collapse__link-wrapper {
-        margin-top: -15px;
-        position: relative;
-        background: rgba(255, 255, 255, 0.6);
-        padding: 15px 0;
-    }
-
-    .footer__collapse-toggler {
-        display: block;
-        text-align: center;
-        font-size: 14px;
-        font-weight: bold;
-        color: #ff6634;
-        text-decoration: none;
-    }
-
     .footer__bottom {
         margin-top: 15px;
     }
@@ -102,7 +43,7 @@
     .footer__card-inner {
         display: flex;
         flex-wrap: nowrap;
-        width: 700px;
+        width: 760px;
         padding: 10px;
     }
 
@@ -169,5 +110,48 @@
 
     .footer__download-link {
         text-decoration: none;
+        width: 115px;
+        height: 35px;
+        background-image: url("./../images/download-img.png");
+        background-position-y: -7px;
+
+        &.footer__download-link--one {
+            background-position-x: -253px;
+        }
+        &.footer__download-link--two {
+            background-position-x: -130px;
+        }
+        &.footer__download-link--three {
+            background-position-x: -8px;
+        }
+    }
+
+    .footer__license-link {
+        width: 112px;
+        height: 112px;
+        background-image: url("./../images/license.png");
+
+        &.footer__license-link--one {
+            background-position-x: -175px;
+            background-position-y: 0;
+        }
+        &.footer__license-link--two {
+            background-position-x: -88px;
+            background-position-y: 0;
+        }
+        &.footer__license-link--three {
+            background-position-x: 0;
+            background-position-y: 0;
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .footer {
+        .footer__download-link {
+            &:nth-of-type(2) {
+                margin: 0 5px !important;
+            }
+        }
     }
 }

@@ -15,12 +15,14 @@ body {
 	font-family: iranyekan  !important;
 }
 
-.custom-col-5 {
-    width: 39.3% !important;
-}
-
-.custom-col-7 {
-    width: 59.9% !important;
+@media only screen and (min-width: 1140px) {
+    .custom-col-5 {
+        width: 39.3% !important;
+    }
+    
+    .custom-col-7 {
+        width: 59.9% !important;
+    }
 }
 
 @import "abstracts/variables";
@@ -34,12 +36,25 @@ body {
 
 
 @import "components/buttons";
+@import "components/product-card";
+
 @import "components/assurance-card";
 @import "components/custom-breadcrumb";
 @import "components/custom-accordion";
+@import "components/custom-collapse";
+@import "components/custom-switch";
 @import "components/mobile-menu";
 @import "components/forms";
 @import "components/menu";
+@import "components/intro-section";
+@import "components/custom-pagination";
+@import "components/custom-modal";
+@import "components/mobile-fixed-btn";
 
 @import "pages/home.scss";
 @import "pages/archive.scss";
+@import "pages/single-page.scss";
+@import "pages/cart.scss";
+@import "pages/shipping.scss";
+@import "pages/profile.scss";
+@import "pages/profile-edit.scss";

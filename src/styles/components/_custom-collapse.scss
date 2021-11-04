@@ -1,0 +1,74 @@
+
+    .custom-collapse {
+        .custom-collapse__title {
+            font-size: 14px;
+            margin-bottom: 15px;
+            font-weight: bold;
+            color: #444;
+            text-align: center;
+            letter-spacing: -0.7px;
+        }
+
+        .custom-collapse__content {
+            border: 0;
+            font-size: 12px;
+            font-weight: 300;
+            color: #444;
+            line-height: 16px;
+            text-align: center;
+        }
+
+        .custom-collapse__card-body {
+            border: 0 !important;
+        }
+
+        .custom-collapse__close {
+            display: block;
+            span {
+                font-size: 24px;
+                vertical-align: -8px;
+            }
+        }
+        .custom-collapse__open {
+            display: none;
+            span {
+                font-size: 24px;
+                vertical-align: -7px;
+            }
+        }
+        .custom-collapse__collapse {
+            display: block;
+            height: 95px;
+            overflow: hidden;
+
+            &.show {
+                height: auto;
+
+                & ~ .custom-collapse__link-wrapper {
+                    background-color: transparent;
+                    .custom-collapse__close {
+                        display: none !important;
+                    }
+                    .custom-collapse__open {
+                        display: block !important;
+                    }
+                }
+            }
+        }
+
+        .custom-collapse__link-wrapper {
+            margin-top: -35px !important;
+            position: relative;
+            background: rgba(255, 255, 255, 0.6);
+            padding: 35px 0 !important;
+        }
+
+        .custom-collapse__toggler {
+            display: block;
+            text-align: center;
+            font-size: 14px;
+            font-weight: bold;
+            color: #ff6634;
+            text-decoration: none;
+        }
+    }

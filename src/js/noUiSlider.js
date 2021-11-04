@@ -8,11 +8,23 @@ $(document).ready(function() {
       $(this).width(50);
     });
     var rangeSlider = document.getElementById('slider-range');
+    var mobileRangeSlider = document.getElementById('mobile-slider-range');
     var moneyFormat = wNumb({
       decimals: 0,
       thousand: '.',
     });
     noUiSlider.create(rangeSlider, {
+      start: [100, 88200000],
+      step: 1,
+      range: {
+        'min': [100],
+        'max': [88200000]
+      },
+      format: moneyFormat,
+      connect: true
+    });
+
+    noUiSlider.create(mobileRangeSlider, {
       start: [100, 88200000],
       step: 1,
       range: {
@@ -32,6 +44,16 @@ $(document).ready(function() {
       document.getElementsByName('max-value').value = moneyFormat.from(
         values[1]);
     });
+
+        // Set visual min and max values and also update value hidden form inputs
+        mobileRangeSlider.noUiSlider.on('update', function(values, handle) {
+          document.getElementById('mobile-slider-range-value1').innerHTML = values[0];
+          document.getElementById('mobile-slider-range-value2').innerHTML = values[1];
+          document.getElementsByName('min-value').value = moneyFormat.from(
+            values[0]);
+          document.getElementsByName('max-value').value = moneyFormat.from(
+            values[1]);
+        });
   });
   
   

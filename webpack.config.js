@@ -11,7 +11,7 @@ module.exports = {
     app: "./src/js/app.js",
     owl: "./src/js/owl.js",
     noUiSlider: "./src/js/noUiSlider.js",
-    zoomy: "./src/js/zoomy.js",
+    splide: "./src/js/splide.js",
   },
   output: {
     filename: "js/[name].js",
@@ -146,7 +146,31 @@ module.exports = {
       title: "Single Page",
       template: "src/single-page.html",
       filename: "single-page.html",
-      chunks: ["app", "owl", "zoomy"],
+      chunks: ["app", "owl", "splide"],
+    }),
+    new HtmlWebpackPlugin({
+      title: "Cart",
+      template: "src/cart.html",
+      filename: "cart.html",
+      chunks: ["app"],
+    }),
+    new HtmlWebpackPlugin({
+      title: "Shipping",
+      template: "src/shipping.html",
+      filename: "shipping.html",
+      chunks: ["app"],
+    }),
+    new HtmlWebpackPlugin({
+      title: "Profile",
+      template: "src/profile.html",
+      filename: "profile.html",
+      chunks: ["app"],
+    }),
+    new HtmlWebpackPlugin({
+      title: "Profile Edit",
+      template: "src/profile-edit.html",
+      filename: "profile-edit.html",
+      chunks: ["app"],
     }),
     new CopyWebpackPlugin({
       patterns: [
